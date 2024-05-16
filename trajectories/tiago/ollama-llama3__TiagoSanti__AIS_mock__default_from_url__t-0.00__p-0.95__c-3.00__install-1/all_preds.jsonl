@@ -1,0 +1,1 @@
+{"model_name_or_path": "ollama-llama3__TiagoSanti__AIS_mock__default_from_url__t-0.00__p-0.95__c-3.00__install-1", "instance_id": "TiagoSanti__AIS_mock-i1", "model_patch": "\ndiff --git a/new_file.py b/new_file.py\nnew file mode 100644\nindex 0000000..5835847\n--- /dev/null\n+++ b/new_file.py\n@@ -0,0 +1,4 @@\n+x = 5\n+y = 10\n+def calculate_sum(x, y):\n+    return x + y\n"}
