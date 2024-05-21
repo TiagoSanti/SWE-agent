@@ -1,11 +1,12 @@
 import os
+import requests
 import pathspec
 from transformers import DPRQuestionEncoder, DPRQuestionEncoderTokenizer
 from transformers import DPRContextEncoder, DPRContextEncoderTokenizer
-from transformers import BartForConditionalGeneration, BartTokenizer
 import torch
+import ollama
 
-extensions = ('.py', '.md')
+extensions = ('.py', '.js', '.java', '.cpp', '.c', '.h', '.md')
 
 # Function to read .gitignore file and return a pathspec matcher
 def load_gitignore(clone_dir):
@@ -53,11 +54,6 @@ question_tokenizer = DPRQuestionEncoderTokenizer.from_pretrained('facebook/dpr-q
 context_encoder = DPRContextEncoder.from_pretrained('facebook/dpr-ctx_encoder-single-nq-base').to(device)
 context_tokenizer = DPRContextEncoderTokenizer.from_pretrained('facebook/dpr-ctx_encoder-single-nq-base')
 
-# Initialize the summarization model
-print("Loading summarization model...")
-summarizer = BartForConditionalGeneration.from_pretrained('facebook/bart-large-cnn').to(device)
-summarizer_tokenizer = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
-
 # Function to encode context documents
 def encode_contexts(contexts):
     print("Encoding context documents...")
@@ -85,17 +81,16 @@ def retrieve_contexts(issue_description, file_contents, k=5):
     print("Retrieved top relevant files.")
     return top_files
 
-# Function to generate a brief summary of file contents
+# Function to generate a brief summary of file contents using the Ollama model
 def brief_description(file_content):
-    # Use the first few lines of the file as a fallback summary
-    first_few_lines = '\n'.join(file_content.split('\n')[:5])
-    inputs = summarizer_tokenizer(file_content, return_tensors='pt', max_length=1024, truncation=True).to(device)
-    summary_ids = summarizer.generate(inputs['input_ids'], max_length=100, min_length=30, length_penalty=2.0, num_beams=4, early_stopping=True)
-    summary = summarizer_tokenizer.decode(summary_ids[0], skip_special_tokens=True)
-    
-    if not summary.strip():
-        return first_few_lines.strip() + '...'
-    
+    prompt = f"Generate a brief summary for the following file content:\n\n{file_content}"
+    response = ollama.chat(model='llama3', messages=[
+        {
+            'role': 'user',
+            'content': prompt,
+        },
+    ])
+    summary = response['message']['content']
     return summary
 
 # Main function to perform RAG and get top N files
