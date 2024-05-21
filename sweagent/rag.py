@@ -14,7 +14,7 @@ def load_gitignore(clone_dir):
         with open(gitignore_path, 'r') as f:
             gitignore_patterns = f.read().splitlines()
         return pathspec.PathSpec.from_lines('gitwildmatch', gitignore_patterns)
-    return pathspec.PathSpec([])  # Return an empty PathSpec if no .gitignore is found
+    return pathspec.PathSpec([])
 
 # Step 1: Extract file contents from the cloned repository
 def extract_file_contents(clone_dir):
@@ -71,11 +71,12 @@ def encode_contexts(contexts, device):
             device = 'cpu'
             context_encoder.to(device)
             question_encoder.to(device)
-            inputs = inputs.to(device)  # Ensure inputs are moved to CPU
+            inputs = inputs.to(device)
             embeddings = context_encoder(**inputs).pooler_output
         context_embeddings.append(embeddings)
         torch.cuda.empty_cache()  # Clear the cache to free up memory
     print("Finished encoding context documents.")
+    context_embeddings = [embedding.to(device) for embedding in context_embeddings]
     return torch.cat(context_embeddings), device
 
 # Step 2: Retrieve top N relevant files
@@ -84,7 +85,7 @@ def retrieve_contexts(issue_description, file_contents, device, k=5):
     inputs = question_tokenizer(issue_description, return_tensors='pt', truncation=True, padding=True, max_length=512).to(device)
     question_embedding = question_encoder(**inputs).pooler_output
     context_embeddings, device = encode_contexts(list(file_contents.values()), device)
-    question_embedding = question_embedding.to(device)  # Ensure question_embedding is on the same device
+    question_embedding = question_embedding.to(device)
     scores = torch.matmul(question_embedding, context_embeddings.T)
     top_k_indices = torch.topk(scores, k, dim=1).indices[0]
     
@@ -120,7 +121,6 @@ def rag_top_files(clone_dir, issue_description, top_n=5):
     print("RAG process completed.")
     return results
 
-# Example usage
 clone_dir = os.path.expanduser('~/ais/AIS_mock')
 issue_description = """**Summary**
 The decision tree image is not being generated when I select the 'decision_tree' model for training using the machine learning endpoint or pipeline endpoint of onca-pintada project. The training completes successfully, and other models produce the expected outputs, but the decision tree visualization is missing.
