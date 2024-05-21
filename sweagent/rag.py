@@ -71,6 +71,7 @@ def encode_contexts(contexts, device):
             device = 'cpu'
             context_encoder.to(device)
             question_encoder.to(device)
+            inputs = inputs.to(device)  # Ensure inputs are moved to CPU
             embeddings = context_encoder(**inputs).pooler_output
         context_embeddings.append(embeddings)
         torch.cuda.empty_cache()  # Clear the cache to free up memory
@@ -83,7 +84,7 @@ def retrieve_contexts(issue_description, file_contents, device, k=5):
     inputs = question_tokenizer(issue_description, return_tensors='pt', truncation=True, padding=True, max_length=512).to(device)
     question_embedding = question_encoder(**inputs).pooler_output
     context_embeddings, device = encode_contexts(list(file_contents.values()), device)
-    
+    question_embedding = question_embedding.to(device)  # Ensure question_embedding is on the same device
     scores = torch.matmul(question_embedding, context_embeddings.T)
     top_k_indices = torch.topk(scores, k, dim=1).indices[0]
     
