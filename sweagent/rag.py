@@ -1,5 +1,4 @@
 import os
-import requests
 import pathspec
 from transformers import DPRQuestionEncoder, DPRQuestionEncoderTokenizer
 from transformers import DPRContextEncoder, DPRContextEncoderTokenizer
@@ -44,7 +43,10 @@ def extract_file_contents(clone_dir):
     print(f"Extracted contents of {len(file_contents)} files.")
     return file_contents
 
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
+def get_device():
+    return 'cuda' if torch.cuda.is_available() else 'cpu'
+
+device = get_device()
 print(f"Using device: {device}")
 
 # Initialize the retrieval models
@@ -62,8 +64,17 @@ def encode_contexts(contexts):
         if i % 10 == 0:
             print(f"Encoding document {i+1}/{len(contexts)}...")
         inputs = context_tokenizer(context, return_tensors='pt', truncation=True, padding=True, max_length=512).to(device)
-        embeddings = context_encoder(**inputs).pooler_output
+        try:
+            embeddings = context_encoder(**inputs).pooler_output
+        except torch.cuda.OutOfMemoryError:
+            print(f"CUDA out of memory at document {i+1}, switching to CPU for remaining documents.")
+            global device
+            device = 'cpu'
+            context_encoder.to(device)
+            question_encoder.to(device)
+            embeddings = context_encoder(**inputs).pooler_output
         context_embeddings.append(embeddings)
+        torch.cuda.empty_cache()  # Clear the cache to free up memory
     print("Finished encoding context documents.")
     return torch.cat(context_embeddings)
 
@@ -109,8 +120,7 @@ def rag_top_files(clone_dir, issue_description, top_n=5):
     print("RAG process completed.")
     return results
 
-# Example usage
-clone_dir = r'S:\Dev\AIS\AIS_mock'
+clone_dir = os.path.expanduser('~/ais/AIS_mock')
 issue_description = """**Summary**
 The decision tree image is not being generated when I select the 'decision_tree' model for training using the machine learning endpoint or pipeline endpoint of onca-pintada project. The training completes successfully, and other models produce the expected outputs, but the decision tree visualization is missing.
 
