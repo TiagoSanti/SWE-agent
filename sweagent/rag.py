@@ -57,7 +57,7 @@ context_encoder = DPRContextEncoder.from_pretrained('facebook/dpr-ctx_encoder-si
 context_tokenizer = DPRContextEncoderTokenizer.from_pretrained('facebook/dpr-ctx_encoder-single-nq-base')
 
 # Function to encode context documents
-def encode_contexts(contexts):
+def encode_contexts(contexts, device):
     print("Encoding context documents...")
     context_embeddings = []
     for i, context in enumerate(contexts):
@@ -68,7 +68,6 @@ def encode_contexts(contexts):
             embeddings = context_encoder(**inputs).pooler_output
         except torch.cuda.OutOfMemoryError:
             print(f"CUDA out of memory at document {i+1}, switching to CPU for remaining documents.")
-            global device
             device = 'cpu'
             context_encoder.to(device)
             question_encoder.to(device)
@@ -76,14 +75,14 @@ def encode_contexts(contexts):
         context_embeddings.append(embeddings)
         torch.cuda.empty_cache()  # Clear the cache to free up memory
     print("Finished encoding context documents.")
-    return torch.cat(context_embeddings)
+    return torch.cat(context_embeddings), device
 
 # Step 2: Retrieve top N relevant files
-def retrieve_contexts(issue_description, file_contents, k=5):
+def retrieve_contexts(issue_description, file_contents, device, k=5):
     print("Retrieving top relevant files...")
     inputs = question_tokenizer(issue_description, return_tensors='pt', truncation=True, padding=True, max_length=512).to(device)
     question_embedding = question_encoder(**inputs).pooler_output
-    context_embeddings = encode_contexts(list(file_contents.values()))
+    context_embeddings, device = encode_contexts(list(file_contents.values()), device)
     
     scores = torch.matmul(question_embedding, context_embeddings.T)
     top_k_indices = torch.topk(scores, k, dim=1).indices[0]
@@ -108,7 +107,7 @@ def brief_description(file_content):
 def rag_top_files(clone_dir, issue_description, top_n=5):
     print("Starting RAG process...")
     file_contents = extract_file_contents(clone_dir)
-    top_files = retrieve_contexts(issue_description, file_contents, k=top_n)
+    top_files = retrieve_contexts(issue_description, file_contents, device, k=top_n)
     
     results = []
     for i, (file, score) in enumerate(top_files):
@@ -120,6 +119,7 @@ def rag_top_files(clone_dir, issue_description, top_n=5):
     print("RAG process completed.")
     return results
 
+# Example usage
 clone_dir = os.path.expanduser('~/ais/AIS_mock')
 issue_description = """**Summary**
 The decision tree image is not being generated when I select the 'decision_tree' model for training using the machine learning endpoint or pipeline endpoint of onca-pintada project. The training completes successfully, and other models produce the expected outputs, but the decision tree visualization is missing.
