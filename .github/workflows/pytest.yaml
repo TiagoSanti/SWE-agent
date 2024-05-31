@@ -1,16 +1,29 @@
 
 name: Pytest
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'docs/**'
+      - 'README.md'
+      - 'mkdocs.yml'
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - 'docs/**'
+      - 'README.md'
+      - 'mkdocs.yml'
 
+# Not possible to test windows capability:
+# https://github.com/orgs/community/discussions/25491
 jobs:
-  setup_job:
+  test:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -30,14 +43,9 @@ jobs:
       - name: Install uv
         run: |
           curl -LsSf https://astral.sh/uv/install.sh | sh
-      # See https://github.com/princeton-nlp/SWE-agent/actions/runs/9102025526/job/25020661634?pr=360
-      - name: Set the VIRTUAL_ENV variable for uv to work
-        run: |
-          echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
       - name: Install dependencies
         run: |
-            uv pip install .
-            uv pip install pytest pytest-cov
+            uv pip install --python ${Python_ROOT_DIR} '.[dev]'
       - name: Run pytest
         run: |
             pytest --cov

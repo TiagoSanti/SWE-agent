@@ -1,7 +1,11 @@
+from __future__ import annotations
+
 import json
-from pathlib import Path
+import os
 import subprocess
-from typing import Any, Dict
+from pathlib import Path
+from typing import Any
+
 import pytest
 
 from run import ActionsArguments, Main, MainHook, OpenPRHook, ScriptArguments
@@ -9,6 +13,8 @@ from sweagent.agent.agents import Agent, AgentArguments, AgentHook
 from sweagent.agent.models import ModelArguments
 from sweagent.environment.swe_env import EnvironmentArguments, SWEEnv
 
+
+@pytest.mark.slow()
 def test_run_cli_help():
     args = [
         "python",
@@ -18,19 +24,17 @@ def test_run_cli_help():
     subprocess.run(args, check=True)
 
 
-
-@pytest.fixture
+@pytest.fixture()
 def open_pr_hook_init_for_sop():
     hook = OpenPRHook()
-    hook._token = ""
-    hook._env = None
+    hook._token = os.environ.get("GITHUB_TOKEN", "")
     hook._data_path = "https://github.com/klieret/swe-agent-test-repo/issues/1"
     hook._open_pr = True
     hook._skip_if_commits_reference_issue = True
     return hook
 
 
-@pytest.fixture
+@pytest.fixture()
 def info_dict():
     return {
         "submission": "asdf",
@@ -73,6 +77,7 @@ def test_should_open_pr_fail_locked(open_pr_hook_init_for_sop, info_dict):
     hook._data_path = "https://github.com/klieret/swe-agent-test-repo/issues/18"
     assert not hook.should_open_pr(info_dict)
 
+
 def test_should_open_pr_fail_has_pr(open_pr_hook_init_for_sop, info_dict):
     hook = open_pr_hook_init_for_sop
     hook._data_path = "https://github.com/klieret/swe-agent-test-repo/issues/19"
@@ -87,10 +92,12 @@ def test_should_open_pr_success_has_pr_override(open_pr_hook_init_for_sop, info_
 
 
 class RaisesExceptionHook(MainHook):
-    def on_instance_start(self, *, index: int, instance: Dict[str, Any]):
-        raise ValueError("test exception")
+    def on_instance_start(self, *, index: int, instance: dict[str, Any]):
+        msg = "test exception"
+        raise ValueError(msg)
 
-@pytest.fixture
+
+@pytest.fixture()
 def test_script_args():
     return ScriptArguments(
         suffix="",
@@ -117,6 +124,7 @@ def test_script_args():
     )
 
 
+@pytest.mark.slow()
 def test_exception_raised(test_script_args):
     assert test_script_args.raise_exceptions
     main = Main(test_script_args)
@@ -125,34 +133,37 @@ def test_exception_raised(test_script_args):
         main.main()
 
 
+@pytest.mark.slow()
 class CreateFakeLogFile(MainHook):
     """Testing the skip functionality"""
+
     def on_init(self, *, args: ScriptArguments, agent: Agent, env: SWEEnv, traj_dir: Path):
         self._traj_dir = traj_dir
         (traj_dir / "args.yaml").write_text("asdf")
-    
-    def on_instance_start(self, *, index: int, instance: Dict[str, Any]):
+
+    def on_instance_start(self, *, index: int, instance: dict[str, Any]):
         instance_id = instance["instance_id"]
         dct = {
             "info": {"exit_status": "submitted"},
         }
         (self._traj_dir / f"{instance_id}.traj").write_text(json.dumps(dct))
-    
 
 
+@pytest.mark.slow()
 def test_existing_corrupted_args(test_script_args):
     main = Main(test_script_args)
     main.add_hook(CreateFakeLogFile())
     main.main()
 
 
-
+@pytest.mark.slow()
 def test_main_hook(test_script_args):
     main = Main(test_script_args)
     main.add_hook(MainHook())
     main.main()
 
 
+@pytest.mark.slow()
 def test_agent_with_hook(test_script_args):
     main = Main(test_script_args)
     main.agent.add_hook(AgentHook())

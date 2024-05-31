@@ -9,10 +9,12 @@ body:
     description: >
       Tell us about the confusion you have about SWE-agent *or*
       the information that is missing in the documentation.
+      If you face error messages and more, please open a bug report
+      instead https://github.com/princeton-nlp/SWE-agent/issues/new?template=bug_report.yml
   validations:
     required: true
-- type: textarea
+- type: input
   attributes:
-    label: Suggest an improvement to documentation
+    label: "Optional: Relevant documentation page"
     description: >
-      Tell us how we could improve the documentation in this regard.
+      If something is missing in a specific page, put the URL here
