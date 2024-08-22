@@ -120,10 +120,12 @@ class ScriptArguments(FlattenedAccess, FrozenSerializable):
         top_p = self.agent.model.top_p
 
         per_instance_cost_limit = self.agent.model.per_instance_cost_limit
+        api_calls_limit = self.agent.model.api_calls_limit
         install_env = self.environment.install_environment
 
         return (
             f"{model_name}__{data_stem}__{config_stem}__t-{temp:.2f}__p-{top_p:.2f}"
+            + f"__acl-{api_calls_limit}"
             + f"__c-{per_instance_cost_limit:.2f}__install-{int(install_env)}"
             + (f"__{self.suffix}" if self.suffix else "")
         )
@@ -144,7 +146,9 @@ class MainHook:
         # The exit status can also be `submitted (exit_cost)` etc.
         return info["exit_status"] == "submitted" and info.get("submission") is not None
 
-    def on_init(self, *, args: ScriptArguments, agent: Agent, env: SWEEnv, traj_dir: Path):
+    def on_init(
+        self, *, args: ScriptArguments, agent: Agent, env: SWEEnv, traj_dir: Path
+    ):
         """Called when hook is initialized"""
 
     def on_start(self):
@@ -168,7 +172,9 @@ class MainHook:
 class SaveApplyPatchHook(MainHook):
     """This hook saves patches to a separate directory and optionally applies them to a local repository."""
 
-    def on_init(self, *, args: ScriptArguments, agent: Agent, env: SWEEnv, traj_dir: Path):
+    def on_init(
+        self, *, args: ScriptArguments, agent: Agent, env: SWEEnv, traj_dir: Path
+    ):
         self._traj_dir = traj_dir
         self._apply_patch_locally = args.actions.apply_patch_locally
         self._instance = None
@@ -255,12 +261,16 @@ class SaveApplyPatchHook(MainHook):
 class OpenPRHook(MainHook):
     """This hook opens a PR if the issue is solved and the user has enabled the option."""
 
-    def on_init(self, *, args: ScriptArguments, agent: Agent, env: SWEEnv, traj_dir: Path):
+    def on_init(
+        self, *, args: ScriptArguments, agent: Agent, env: SWEEnv, traj_dir: Path
+    ):
         self._env = env
         self._token: str = env._github_token
         self._data_path = args.environment.data_path
         self._open_pr = args.actions.open_pr
-        self._skip_if_commits_reference_issue = args.actions.skip_if_commits_reference_issue
+        self._skip_if_commits_reference_issue = (
+            args.actions.skip_if_commits_reference_issue
+        )
 
     def on_instance_completed(self, *, info, trajectory):
         if self._open_pr and self.should_open_pr(info):
@@ -272,15 +282,22 @@ class OpenPRHook(MainHook):
             logger.info("Not opening PR because no submission was made.")
             return False
         if info["exit_status"] != "submitted":
-            logger.info("Not opening PR because exit status was %s and not submitted.", info["exit_status"])
+            logger.info(
+                "Not opening PR because exit status was %s and not submitted.",
+                info["exit_status"],
+            )
             return False
         try:
             issue = get_gh_issue_data(self._data_path, token=self._token)
         except InvalidGithubURL:
-            logger.info("Currently only GitHub is supported to open PRs to. Skipping PR creation.")
+            logger.info(
+                "Currently only GitHub is supported to open PRs to. Skipping PR creation."
+            )
             return False
         if issue.state != "open":
-            logger.info(f"Issue is not open (state={issue.state}. Skipping PR creation.")
+            logger.info(
+                f"Issue is not open (state={issue.state}. Skipping PR creation."
+            )
             return False
         if issue.assignee:
             logger.info("Issue is already assigned. Skipping PR creation. Be nice :)")
@@ -289,11 +306,15 @@ class OpenPRHook(MainHook):
             logger.info("Issue is locked. Skipping PR creation.")
             return False
         org, repo, issue_number = parse_gh_issue_url(self._data_path)
-        associated_commits = get_associated_commit_urls(org, repo, issue_number, token=self._token)
+        associated_commits = get_associated_commit_urls(
+            org, repo, issue_number, token=self._token
+        )
         if associated_commits:
             commit_url_strs = ", ".join(associated_commits)
             if self._skip_if_commits_reference_issue:
-                logger.info(f"Issue already has associated commits (see {commit_url_strs}). Skipping PR creation.")
+                logger.info(
+                    f"Issue already has associated commits (see {commit_url_strs}). Skipping PR creation."
+                )
                 return False
             else:
                 logger.warning(
@@ -327,7 +348,9 @@ class Main:
             self.add_hook(hook)
 
     def add_hook(self, hook: MainHook):
-        hook.on_init(args=self.args, agent=self.agent, env=self.env, traj_dir=self.traj_dir)
+        hook.on_init(
+            args=self.args, agent=self.agent, env=self.env, traj_dir=self.traj_dir
+        )
         self.hooks.append(hook)
 
     def run(self, index):
@@ -351,17 +374,32 @@ class Main:
         files = []
         assert self.env.record is not None  # mypy
         if "patch" in self.env.record:
-            files = "\n".join([f"- {x.path}" for x in PatchSet(self.env.record["patch"]).modified_files])
+            files = "\n".join(
+                [
+                    f"- {x.path}"
+                    for x in PatchSet(self.env.record["patch"]).modified_files
+                ]
+            )
         # Get test files, F2P tests information
         test_files = []
         if "test_patch" in self.env.record:
             test_patch_obj = PatchSet(self.env.record["test_patch"])
-            test_files = "\n".join([f"- {x.path}" for x in test_patch_obj.modified_files + test_patch_obj.added_files])
+            test_files = "\n".join(
+                [
+                    f"- {x.path}"
+                    for x in test_patch_obj.modified_files + test_patch_obj.added_files
+                ]
+            )
         tests = ""
         if "FAIL_endTO_PASS" in self.env.record:
             tests = "\n".join([f"- {x}" for x in self.env.record["FAIL_TO_PASS"]])
 
-        setup_args = {"issue": issue, "files": files, "test_files": test_files, "tests": tests}
+        setup_args = {
+            "issue": issue,
+            "files": files,
+            "test_files": test_files,
+            "tests": tests,
+        }
         info, trajectory = self.agent.run(
             setup_args=setup_args,
             env=self.env,
@@ -396,7 +434,9 @@ class Main:
                     self.env.close()
                     raise e
                 if self.env.record:
-                    logger.warning(f"❌ Failed on {self.env.record['instance_id']}: {e}")
+                    logger.warning(
+                        f"❌ Failed on {self.env.record['instance_id']}: {e}"
+                    )
                 else:
                     logger.warning("❌ Failed on unknown instance")
                 self.env.reset_container()
@@ -411,7 +451,9 @@ class Main:
         if log_path.exists():
             try:
                 other_args = self.args.load_yaml(log_path)
-                if self.args.dumps_yaml() != other_args.dumps_yaml():  # check yaml equality instead of object equality
+                if (
+                    self.args.dumps_yaml() != other_args.dumps_yaml()
+                ):  # check yaml equality instead of object equality
                     logger.warning("**************************************************")
                     logger.warning("Found existing args.yaml with different arguments!")
                     logger.warning("**************************************************")
@@ -425,7 +467,9 @@ class Main:
         """Check if we should skip this instance based on the instance filter and skip_existing flag."""
         # Skip instances that don't match the instance filter
         if re.match(self.args.instance_filter, instance_id) is None:
-            logger.info(f"⏭️ Instance filter not matched. Skipping instance {instance_id}")
+            logger.info(
+                f"⏭️ Instance filter not matched. Skipping instance {instance_id}"
+            )
             return True
 
         # If flag is set to False, don't skip
@@ -447,7 +491,9 @@ class Main:
         # If the trajectory has no exit status, it's incomplete and we will redo it
         exit_status = data["info"].get("exit_status", None)
         if exit_status == "early_exit" or exit_status is None:
-            logger.warning(f"Found existing trajectory with no exit status: {log_path}. Removing.")
+            logger.warning(
+                f"Found existing trajectory with no exit status: {log_path}. Removing."
+            )
             log_path.unlink()
             return False
 
@@ -489,6 +535,7 @@ def get_args(args=None) -> ScriptArguments:
                 model_name="gpt4",
                 total_cost_limit=0.0,
                 per_instance_cost_limit=3.0,
+                api_calls_limit=10,
                 temperature=0.0,
                 top_p=0.95,
             ),

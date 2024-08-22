@@ -17,6 +17,7 @@ from sweagent.agent.models import (
     APIStats,
     ContextWindowExceededError,
     CostLimitExceededError,
+    APICallsLimitExceededError,
     ModelArguments,
     get_model,
 )
@@ -51,7 +52,9 @@ class AgentConfig(FrozenSerializable):
     # Paths to demonstrations. If path is not absolute, it is assumed to be
     # relative to the SWE_AGENT_CONFIG_ROOT (if set) or the SWE-agent repository root
     demonstrations: list[str | Path] = field(default_factory=list)
-    put_demos_in_history: bool = False  # if True, add demonstration to history instead of as a single message
+    put_demos_in_history: bool = (
+        False  # if True, add demonstration to history instead of as a single message
+    )
     # defaults to format_error_template in ParseFunction
     format_error_template: str = None  # type: ignore
     # Paths to command files. If path is not absolute, it is assumed to be
@@ -65,7 +68,9 @@ class AgentConfig(FrozenSerializable):
     history_processor: str = "DefaultHistoryProcessor"
     history_processor_args: dict[str, Any] = field(default_factory=dict)
     command_docs: str = None  # type: ignore
-    blocklist_error_template: str = "Interactive operation '{name}' is not supported by this environment"
+    blocklist_error_template: str = (
+        "Interactive operation '{name}' is not supported by this environment"
+    )
     blocklist: tuple[str, ...] = (
         "vim",
         "vi",
@@ -101,22 +106,34 @@ class AgentConfig(FrozenSerializable):
     subroutine_types: list[Subroutine] = field(default_factory=list)
 
     def __post_init__(self):
-        object.__setattr__(self, "command_files", convert_paths_to_abspath(self.command_files))
-        object.__setattr__(self, "demonstrations", convert_paths_to_abspath(self.demonstrations))
+        object.__setattr__(
+            self, "command_files", convert_paths_to_abspath(self.command_files)
+        )
+        object.__setattr__(
+            self, "demonstrations", convert_paths_to_abspath(self.demonstrations)
+        )
 
         if self.next_step_template is None:
             object.__setattr__(self, "next_step_template", self.instance_template)
         if self.next_step_no_output_template is None:
-            object.__setattr__(self, "next_step_no_output_template", self.next_step_template)
+            object.__setattr__(
+                self, "next_step_no_output_template", self.next_step_template
+            )
 
         object.__setattr__(self, "parse_command", ParseCommand.get(self.parse_command))
         for file in self.command_files:
             commands = self.parse_command.parse_command_file(file)
 
-            util_functions = [command for command in commands if command.name.startswith("_")]
-            commands = [command for command in commands if not command.name.startswith("_")]
+            util_functions = [
+                command for command in commands if command.name.startswith("_")
+            ]
+            commands = [
+                command for command in commands if not command.name.startswith("_")
+            ]
 
-            object.__setattr__(self, "util_functions", self.util_functions + util_functions)
+            object.__setattr__(
+                self, "util_functions", self.util_functions + util_functions
+            )
             object.__setattr__(self, "_commands", self._commands + commands)
 
         for subroutine in self.subroutine_types:
@@ -128,14 +145,18 @@ class AgentConfig(FrozenSerializable):
                 config_file=subroutine.agent_file,
             )
             object.__setattr__(subroutine, "agent_args", agent_args)
-            object.__setattr__(self, "_subroutines", {**self._subroutines, subroutine.name: subroutine})
+            object.__setattr__(
+                self, "_subroutines", {**self._subroutines, subroutine.name: subroutine}
+            )
 
         multi_line_command_endings = {
             command.name: command.end_name
             for command in [*self._commands, *self._subroutines.values()]
             if command.end_name is not None
         }
-        object.__setattr__(self, "multi_line_command_endings", multi_line_command_endings)
+        object.__setattr__(
+            self, "multi_line_command_endings", multi_line_command_endings
+        )
         object.__setattr__(
             self,
             "command_docs",
@@ -145,7 +166,9 @@ class AgentConfig(FrozenSerializable):
                 **self.env_variables,
             ),
         )
-        object.__setattr__(self, "parse_function", ParseFunction.get(self.parse_function))
+        object.__setattr__(
+            self, "parse_function", ParseFunction.get(self.parse_function)
+        )
         if self.format_error_template is None:
             object.__setattr__(
                 self,
@@ -191,7 +214,9 @@ class AgentArguments(FlattenedAccess, FrozenSerializable):
                 "per_instance_cost_limit",
                 self.model.per_instance_cost_limit,
             )
-            object.__setattr__(model_args, "total_cost_limit", self.model.total_cost_limit)
+            object.__setattr__(
+                model_args, "total_cost_limit", self.model.total_cost_limit
+            )
 
 
 class TrajectoryStep(TypedDict):
@@ -217,7 +242,9 @@ class AgentHook:
 
     def on_sub_action_executed(self, *, obs: str, done: bool): ...
 
-    def on_step_done(self, *, trajectory_step: TrajectoryStep, model_stats: APIStats): ...
+    def on_step_done(
+        self, *, trajectory_step: TrajectoryStep, model_stats: APIStats
+    ): ...
 
     def on_run_done(self): ...
 
@@ -241,7 +268,9 @@ class Agent:
 
     def __init__(self, name: str, args: AgentArguments):
         self.name = name
-        self.model = get_model(args.model, args.config._commands + args.config.subroutine_types)
+        self.model = get_model(
+            args.model, args.config._commands + args.config.subroutine_types
+        )
         self.config = args.config
         assert self.config is not None  # mypy
         self.system_args = {
@@ -280,26 +309,36 @@ class Agent:
         self.logger.info(f"SYSTEM ({self.name})\n{system_msg}")
 
         self.history: list[dict[str, Any]] = []
-        self._append_history({"role": "system", "content": system_msg, "agent": self.name})
+        self._append_history(
+            {"role": "system", "content": system_msg, "agent": self.name}
+        )
 
         if "history_to_messages" in dir(self.model):
             for demonstration_path in self.config.demonstrations:
-                if self.config.demonstration_template is None and not self.config.put_demos_in_history:
+                if (
+                    self.config.demonstration_template is None
+                    and not self.config.put_demos_in_history
+                ):
                     msg = "Cannot use demonstrations without a demonstration template or put_demos_in_history=True"
                     raise ValueError(msg)
 
                 # Load history
                 self.logger.info(f"DEMONSTRATION: {demonstration_path}")
-                demo_history = json.loads(Path(demonstration_path).read_text())["history"]
+                demo_history = json.loads(Path(demonstration_path).read_text())[
+                    "history"
+                ]
                 demo_history = [
                     entry
                     for entry in demo_history
-                    if ("agent" not in entry) or ("agent" in entry and entry["agent"] == self.name)
+                    if ("agent" not in entry)
+                    or ("agent" in entry and entry["agent"] == self.name)
                 ]
 
                 if self.config.put_demos_in_history:
                     if self.config.demonstration_template is not None:
-                        self.logger.warning("Demonstration template is ignored for put_demos_in_history=True")
+                        self.logger.warning(
+                            "Demonstration template is ignored for put_demos_in_history=True"
+                        )
                     # Add demonstration to history directly as separate messages
                     for entry in demo_history:
                         if entry["role"] != "system":
@@ -311,7 +350,9 @@ class Agent:
                         demo_history,
                         is_demonstration=True,
                     )
-                    demonstration = self.config.demonstration_template.format(demonstration=demo_message)
+                    demonstration = self.config.demonstration_template.format(
+                        demonstration=demo_message
+                    )
                     self._append_history(
                         {
                             "agent": self.name,
@@ -329,10 +370,16 @@ class Agent:
     @property
     def local_history(self) -> list[dict[str, str]]:
         """Return the history of the agent since the last reset."""
-        return self.config.history_processor([entry for entry in self.history if entry["agent"] == self.name])
+        return self.config.history_processor(
+            [entry for entry in self.history if entry["agent"] == self.name]
+        )
 
     def save_trajectory(
-        self, trajectory: list[dict[str, Any]], log_path: Path, env_name: str, info: dict[str, Any]
+        self,
+        trajectory: list[dict[str, Any]],
+        log_path: Path,
+        env_name: str,
+        info: dict[str, Any],
     ) -> None:
         """Save the trajectory"""
         log_dict = {
@@ -352,13 +399,20 @@ class Agent:
             patterns = {
                 k: v
                 for k, v in self.command_patterns.items()
-                if k in self.config.multi_line_command_endings or k == self.config.submit_command
+                if k in self.config.multi_line_command_endings
+                or k == self.config.submit_command
             }
             patterns += {
-                k: v for k, v in self.subroutine_patterns.items() if k in self.config.multi_line_command_endings
+                k: v
+                for k, v in self.subroutine_patterns.items()
+                if k in self.config.multi_line_command_endings
             }
         elif pattern_type == "multi_line_no_subroutines":
-            patterns = {k: v for k, v in self.command_patterns.items() if k in self.config.multi_line_command_endings}
+            patterns = {
+                k: v
+                for k, v in self.command_patterns.items()
+                if k in self.config.multi_line_command_endings
+            }
         else:
             msg = f"Unknown pattern type: {pattern_type}"
             raise ValueError(msg)
@@ -393,7 +447,9 @@ class Agent:
                     if not match_action.split("\n")[0].strip().endswith(f"<< '{eof}'"):
                         guarded_command = match_action[first_match.start() :]
                         first_line = guarded_command.split("\n")[0]
-                        guarded_command = guarded_command.replace(first_line, first_line + f" << '{eof}'", 1)
+                        guarded_command = guarded_command.replace(
+                            first_line, first_line + f" << '{eof}'", 1
+                        )
                         parsed_action.append(guarded_command)
                     else:
                         parsed_action.append(match_action)
@@ -402,7 +458,9 @@ class Agent:
                 rem_action = ""
         return "\n".join(parsed_action)
 
-    def split_actions(self, action: str, pattern_type="subroutine") -> list[dict[str, Any]]:
+    def split_actions(
+        self, action: str, pattern_type="subroutine"
+    ) -> list[dict[str, Any]]:
         """Split an action into a list of actions in a greedy manner, each of which is a subroutine call or a single command."""
         parsed_action = list()
         rem_action = action
@@ -413,7 +471,9 @@ class Agent:
                 match_action = rem_action[first_match.start() : first_match.end()]
                 rem_action = rem_action[first_match.end() :]
                 if pre_action.strip():
-                    parsed_action.append({"agent": self.name, "action": pre_action, "cmd_name": None})
+                    parsed_action.append(
+                        {"agent": self.name, "action": pre_action, "cmd_name": None}
+                    )
                 if match_action.strip():
                     if match_action.split()[0] == self.config.submit_command:
                         parsed_action.append(
@@ -433,7 +493,9 @@ class Agent:
                             },
                         )
             else:
-                parsed_action.append({"agent": self.name, "action": rem_action, "cmd_name": None})
+                parsed_action.append(
+                    {"agent": self.name, "action": rem_action, "cmd_name": None}
+                )
                 rem_action = ""
         return parsed_action
 
@@ -467,11 +529,15 @@ class Agent:
                 re.DOTALL | re.MULTILINE,
             )
         else:
-            submit_pat = re.compile(rf"^\s*({self.config.submit_command})(\s*)$", re.MULTILINE)  # group 2 is nothing
+            submit_pat = re.compile(
+                rf"^\s*({self.config.submit_command})(\s*)$", re.MULTILINE
+            )  # group 2 is nothing
         self.subroutine_patterns[self.config.submit_command] = submit_pat
         self.command_patterns[self.config.submit_command] = submit_pat
 
-    def forward(self, observation: str, available_actions: list[str], state: str) -> tuple[str, str, str]:
+    def forward(
+        self, observation: str, available_actions: list[str], state: str
+    ) -> tuple[str, str, str]:
         """Forwards the model
 
         Args:
@@ -513,7 +579,9 @@ class Agent:
 
         templates: list[str] = []
         # Determine observation template based on what prior observation was
-        if self.history[-1]["role"] == "system" or self.history[-1].get("is_demo", False):
+        if self.history[-1]["role"] == "system" or self.history[-1].get(
+            "is_demo", False
+        ):
             # Show instance template if prev. obs. was initial system message
             templates = [self.config.instance_template]
             if self.config.strategy_template is not None:
@@ -632,7 +700,9 @@ class Agent:
         self.logger.warning(f"Malformat limit reached: \n{output}")
         return "Exit due to format error", "exit_format", output
 
-    def forward_with_error_check(self, observation: str, state: str) -> tuple[str, str, str]:
+    def forward_with_error_check(
+        self, observation: str, state: str
+    ) -> tuple[str, str, str]:
         """Wrapper around `self.forward_model` that handles errors and retries
         due to format errors or blocked actions.
 
@@ -654,10 +724,21 @@ class Agent:
             )
         except ContextWindowExceededError:
             self.logger.warning("Context window exceeded")
-            return "Exit due to context window", "exit_context", "Exit due to context window"
+            return (
+                "Exit due to context window",
+                "exit_context",
+                "Exit due to context window",
+            )
         except CostLimitExceededError:
             self.logger.warning("Cost limit exceeded")
             return "Exit due to cost limit", "exit_cost", "Exit due to cost limit"
+        except APICallsLimitExceededError:
+            self.logger.warning("API calls limit exceeded")
+            return (
+                "Exit due to API calls limit",
+                "exit_api",
+                "Exit due to API calls limit",
+            )
         except RetryError as e:
             self.logger.warning(f"Retry error: {e}")
             return (
@@ -790,7 +871,9 @@ class Agent:
         assert self.config is not None
 
         if env.container_obj.id != self.last_container_id:
-            self.logger.info(f"Initializing agent settings for container {env.container_obj.id}")
+            self.logger.info(
+                f"Initializing agent settings for container {env.container_obj.id}"
+            )
             self.init_environment_vars(env)
             self.last_container_id = env.container_obj.id
         # Re-initialize primary
@@ -808,13 +891,18 @@ class Agent:
             for hook in self.hooks:
                 hook.on_step_start()
             state = env.communicate(self.state_command) if self.state_command else None
-            thought, action, output = self.forward(observation, env.get_available_actions(), state)
+            thought, action, output = self.forward(
+                observation, env.get_available_actions(), state
+            )
             for hook in self.hooks:
                 hook.on_actions_generated(thought=thought, action=action, output=output)
             observations = list()
             run_action = self._guard_multiline_input(action)
             for sub_action in self.split_actions(run_action):
-                if sub_action["agent"] == self.name or sub_action["cmd_name"] == self.config.submit_command:
+                if (
+                    sub_action["agent"] == self.name
+                    or sub_action["cmd_name"] == self.config.submit_command
+                ):
                     for hook in self.hooks:
                         hook.on_sub_action_started(sub_action=sub_action)
                     obs, _, done, info = env.step(sub_action["action"])
@@ -845,9 +933,13 @@ class Agent:
             model_stats: APIStats = self.model.stats
             info["model_stats"] = model_stats.to_dict()
             if traj_dir:
-                self.save_trajectory(trajectory, traj_log_path, env_name=env.name, info=info)
+                self.save_trajectory(
+                    trajectory, traj_log_path, env_name=env.name, info=info
+                )
             for hook in self.hooks:
-                hook.on_step_done(trajectory_step=trajectory_step, model_stats=model_stats)
+                hook.on_step_done(
+                    trajectory_step=trajectory_step, model_stats=model_stats
+                )
 
         for hook in self.hooks:
             hook.on_run_done()
