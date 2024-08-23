@@ -535,7 +535,7 @@ def get_args(args=None) -> ScriptArguments:
                 model_name="gpt4",
                 total_cost_limit=0.0,
                 per_instance_cost_limit=3.0,
-                api_calls_limit=10,
+                api_calls_limit=50,
                 temperature=0.0,
                 top_p=0.95,
             ),
