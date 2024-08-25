@@ -1,0 +1,25 @@
+
+diff --git a/reproduce_bug.py b/reproduce_bug.py
+new file mode 100644
+index 00000000..a7a62c84
+--- /dev/null
++++ b/reproduce_bug.py
+@@ -0,0 +1,18 @@
++from astroid import parse
++
++source = """
++X = {
++    'A': 'B'
++}
++
++    Y = X.copy()
++KEY = 'A'
++"""
++tree = parse(source)
++
++first_dict = tree.body[0].value
++second_dict = tree.body[1].value
++key = tree.body[2].value
++
++print(f"{first_dict[key]} = {key}")
++print(f"{second_dict[key]} = {key}")

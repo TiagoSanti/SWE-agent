@@ -1,0 +1,10 @@
+
+diff --git a/bug_reproduction.py b/bug_reproduction.py
+new file mode 100644
+index 0000000..851c262
+--- /dev/null
++++ b/bug_reproduction.py
+@@ -0,0 +1,3 @@
++
++import pvlib
++print('Hello, World!')

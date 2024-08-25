@@ -1,0 +1,29 @@
+
+diff --git a/reproduce_bug.py b/reproduce_bug.py
+new file mode 100644
+index 0000000..8bf8c4c
+--- /dev/null
++++ b/reproduce_bug.py
+@@ -0,0 +1,22 @@
++import pandas as pd
++from pvlib import pvsystem, modelchain, location
++
++# Define location and system attributes
++location = location.Location(32.2, -111)
++system = pvsystem.PVSystem(surface_tilt=30, surface_azimuth=180,
++                           albedo=.2, 
++                           module='Canadian_Solar_CS5P_220M___200701',
++                           inverter=None)
++
++# Create a ModelChain object with the PVSystem and Location objects
++mc = modelchain.ModelChain(system, location, dc_model='sapm')
++
++# Define weather data (in this case, just one hour of data)
++weather = pd.DataFrame({'apparent_zenith': 45,
++                        'dni': 1000,
++                        'dhi': 50,
++                        'wind_speed': 1.5,
++                        'temp_air': 20}, index=[pd.Timestamp('20220425 12:00')])
++
++# Run the model
++mc.run_model(weather)

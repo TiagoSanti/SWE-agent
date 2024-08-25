@@ -1,0 +1,14 @@
+
+diff --git a/test_bug.py b/test_bug.py
+new file mode 100644
+index 0000000..e15302c
+--- /dev/null
++++ b/test_bug.py
+@@ -0,0 +1,7 @@
++from marshmallow import Schema, fields
++
++class MySchema(Schema):
++    times = fields.Nested(fields.DateTime)
++
++s = MySchema()
++print(s)
