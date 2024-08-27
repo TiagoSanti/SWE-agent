@@ -1,0 +1,26 @@
+
+diff --git a/bug_reproduction.py b/bug_reproduction.py
+new file mode 100644
+index 00000000..a9d2b375
+--- /dev/null
++++ b/bug_reproduction.py
+@@ -0,0 +1,11 @@
++import astroid
++
++def main():
++    try:
++        astroid.nodes.Unknown().as_string()
++    except Exception as e:
++        print(f"An error occurred: {e}")
++
++if __name__ == "__main__":
++    main()
++
+diff --git a/project.py b/project.py
+new file mode 100644
+index 00000000..886ae836
+--- /dev/null
++++ b/project.py
+@@ -0,0 +1,2 @@
++def hello_world():
++    print("Hello, world!")

@@ -1,0 +1,1134 @@
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /opt/miniconda3/bin/conda
+++++ dirname /opt/miniconda3/bin
++++ PATH=/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_1=/opt/miniconda3
+++ CONDA_PREFIX_1=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /testbed
++ git config --global --add safe.directory /testbed
++ cd /testbed
++ git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	test_bug.py
+
+nothing added to commit but untracked files present (use "git add" to track)
++ git show
+commit b40a0f4e33823e6d0f341f7e8684e359a99060d1
+Merge: fb4258d 0549bd4
+Author: Steven Loria <sloria1@gmail.com>
+Date:   Tue Aug 20 05:44:59 2019 -0400
+
+    Merge branch '2.x-line' into dev
+
+diff --cc CHANGELOG.rst
+index 9ee46cb,4538026..661f028
+--- a/CHANGELOG.rst
++++ b/CHANGELOG.rst
+@@@ -1,592 -1,22 +1,608 @@@
+  Changelog
+  ---------
+  
+ +3.0.0 (2019-08-18)
+ +++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Optimize ``List(Nested(...))`` (:issue:`779`).
+ +- Minor performance improvements and cleanup (:pr:`1328`).
+ +- Add ``Schema.from_dict`` (:issue:`1312`).
+ +
+ +Deprecations/Removals:
+ +
+ +- ``Field.fail`` is deprecated. Use ``Field.make_error`` instead.
+ +- Remove UUID validation from ``fields.UUID``, for consistency with other fields (:issue:`1132`).
+ +
+ +Support:
+ +
+ +- Various docs improvements (:pr:`1329`).
+ +
+ +3.0.0rc9 (2019-07-31)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- *Backwards-incompatible*: Validation does not occur on serialization (:issue:`1132`).
+ +  This significantly improves serialization performance.
+ +- *Backwards-incompatible*: ``DateTime`` does not affect timezone information
+ +  on serialization and deserialization (:issue:`1234`, :pr:`1287`).
+ +- Add ``NaiveDateTime`` and ``AwareDateTime`` to enforce timezone awareness
+ +  (:issue:`1234`, :pr:`1287`).
+ +- *Backwards-incompatible*: ``List`` does not wrap single values in a list on
+ +  serialization (:pr:`1307`).
+ +- *Backwards-incompatible*: ``Schema.handle_error`` receives ``many`` and ``partial`` as keyword arguments (:pr:`1321`).
+ +- Use `raise from` more uniformly to improve stack traces (:pr:`1313`).
+ +- Rename ``Nested.__schema`` to ``Nested._schema`` to prevent name mangling (:issue:`1289`).
+ +- Performance improvements (:pr:`1309`).
+ +
+ +Deprecations/Removals:
+ +
+ +- ``LocalDateTime`` is removed (:issue:`1234`).
+ +- ``marshmallow.utils.utc`` is removed. Use ``datetime.timezone.utc`` instead.
+ +
+ +Bug fixes:
+ +
+ +- Fix behavior of `List(Nested("self"))` (`#779 (comment) <https://github.com/marshmallow-code/marshmallow/issues/779#issuecomment-396354987>`_).
+ +
+ +Support:
+ +
+ +- Document usage of  `validate.Regexp`'s usage `re.search` (:issue:`1285`). Thanks :user:`macdonaldezra`.
+ +
+ +3.0.0rc8 (2019-07-04)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Propagate ``only`` and ``exclude`` parameters to ``Nested`` fields
+ +  within ``List`` and ``Dict`` (:issue:`779`, :issue:`946`).
+ +- Use ``email.utils.parsedate_to_datetime`` instead of conditionally
+ +  using dateutil for parsing RFC dates (:pr:`1246`).
+ +- Use internal util functions instead of conditionally using dateutil
+ +  for parsing  ISO 8601 datetimes, dates and times. Timezone info is now
+ +  correctly deserialized whether or not dateutil is installed. (:pr:`1265`)
+ +- Improve error messages for ``validate.Range``.
+ +- Use ``raise from error`` for better stack traces (:pr:`1254`). Thanks
+ +  :user:`fuhrysteve`.
+ +- python-dateutil is no longer used. This resolves the inconsistent behavior
+ +  based on the presence of python-dateutil (:issue:`497`, :issue:`1234`).
+ +
+ +Bug fixes:
+ +
+ +- Fix method resolution for ``__init__`` method of ``fields.Email`` and
+ +  ``fields.URL`` (:issue:`1268`). Thanks :user:`dursk` for the catch and patch.
+ +- Includes bug fixes from 2.19.4 and 2.19.5.
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: Rename ``fields.List.container`` to ``fields.List.inner``,
+ +  ``fields.Dict.key_container`` to ``fields.Dict.key_field``, and
+ +  ``fields.Dict.value_container`` to ``fields.Dict.value_field``.
+ +- Switch to Azure Pipelines for CI (:issue:`1261`).
+ +
+ +3.0.0rc7 (2019-06-15)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- *Backwards-incompatible*: ``many`` is passed as a keyword argument to methods decorated with
+ +  ``pre_load``, ``post_load``, ``pre_dump``, ``post_dump``,
+ +  and ``validates_schema``. ``partial`` is passed as a keyword argument to
+ +  methods decorated with ``pre_load``, ``post_load`` and ``validates_schema``.
+ +  ``**kwargs`` should be added to all decorated methods.
+ +- Add ``min_inclusive`` and ``max_exclusive`` parameters to
+ +  ``validate.Range`` (:issue:`1221`). Thanks :user:`kdop` for the PR.
+ +
+ +Bug fixes:
+ +
+ +- Fix propagation of "partial" to Nested containers (part of :issue:`779`).
+ +- Includes bug fix from 2.19.3.
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: Use keyword-only arguments (:issue:`1216`).
+ +
+ +3.0.0rc6 (2019-05-05)
+ ++++++++++++++++++++++
+ +
+ +Support:
+ +
+ +- *Backwards-incompatible*: Remove support for Python 2 (:issue:`1120`).
+ +  Only Python>=3.5 is supported.
+ +  Thank you :user:`rooterkyberian` for the suggestion and the PR.
+ +- *Backwards-incompatible*: Remove special-casing in ``fields.List`` and
+ +  ``fields.Tuple`` for accessing nested attributes (:pr:`1188`).
+ +  Use ``fields.List(fields.Pluck(...))`` instead.
+ +- Add ``python_requires`` to ``setup.py`` (:pr:`1194`).
+ +  Thanks :user:`hugovk`.
+ +- Upgrade syntax with ``pyupgrade`` in pre-commit (:pr:`1195`). Thanks
+ +  again :user:`hugovk`.
+ +
+ +3.0.0rc5 (2019-03-30)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Allow input value to be included in error messages
+ +  for a number of fields (:pr:`1129`). Thanks :user:`hdoupe` for the PR.
+ +- Improve default error messages for ``OneOf`` and ``ContainsOnly``
+ +  (:issue:`885`). Thanks :user:`mcgfeller` for the suggestion
+ +  and :user:`maxalbert` for the PR.
+ +
+ +Deprecations/Removals:
+ +
+ +- Remove ``fields.FormattedString`` (:issue:`1141`). Use
+ +  ``fields.Function`` or ``fields.Method`` instead.
+ +
+ +Bug fixes:
+ +
+ +- Includes bug fix from 2.19.2.
+ +
+ +3.0.0rc4 (2019-02-08)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Add ``fields.Tuple`` (:issue:`1103`) Thanks :user:`zblz` for the PR.
+ +- Add ``fields.Mapping``, which makes it easier to support other
+ +  mapping types (e.g. ``OrderedDict``)  (:issue:`1092`).
+ +  Thank :user:`sayanarijit` for the suggestion and the PR.
+ +
+ +3.0.0rc3 (2019-01-13)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Make the error messages for "unknown fields" and "invalid data type"
+ +  configurable (:issue:`852`). Thanks :user:`Dunstrom` for the PR.
+ +- ``fields.Boolean`` parses ``"yes"``/``"no"`` values (:pr:`1081`).
+ +  Thanks :user:`r1b`.
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible with previous 3.x versions*: Change ordering
+ +  of ``keys`` and ``values`` arguments to ``fields.Dict``.
+ +- Remove unused code in `marshmallow.utils`: ``is_indexable_but_not_string``,
+ +  ``float_to_decimal``, ``decimal_to_fixed``, ``from_iso`` (:pr:`1088`).
+ +- Remove unused ``marshmallow.compat.string_types``.
+ +
+ +Bug fixes:
+ +
+ +- Includes bug fix from 2.18.0.
+ +
+ +3.0.0rc2 (2019-01-03)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Add ``register`` *class Meta* option to allow bypassing marshmallow's
+ +  internal class registry when memory usage is critical (:issue:`660`).
+ +
+ +Bug fixes:
+ +
+ +- Fix serializing dict-like objects with properties (:issue:`1060`).
+ +  Thanks :user:`taion` for the fix.
+ +- Fix populating ``ValidationError.valid_data`` for ``List`` and
+ +  ``Dict`` fields (:issue:`766`).
+ +
+ +Other changes:
+ +
+ +- Add ``marshmallow.__version_info__`` (:pr:`1074`).
+ +- Remove the ``marshmallow.marshalling`` internal module (:pr:`1070`).
+ +- A ``ValueError`` is raised when the ``missing`` parameter is passed
+ +  for required fields (:issue:`1040`).
+ +- Extra keyword arguments passed to ``ValidationError`` in validators
+ +  are no longer passed to the final ``ValidationError`` raised upon
+ +  validation completion (:issue:`996`).
+ +
+ +3.0.0rc1 (2018-11-29)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- *Backwards-incompatible*: Rework ``ValidationError`` API.
+ +  It now expects a single field name, and error structures are merged
+ +  in the final ``ValidationError`` raised when validation completes.
+ +  This allows schema-level validators to raise errors for individual
+ +  fields (:issue:`441`). Thanks :user:`maximkulkin` for
+ +  writing the original ``merge_errors`` implementation in :pr:`442` and thanks
+ +  :user:`lafrech` for completing the implementation in :pr:`1026`.
+ +
+ +Bug fixes:
+ +
+ +- Fix ``TypeError`` when serializing ``None`` with ``Pluck`` (:pr:`1049`).
+ +  Thanks :user:`toffan` for the catch and patch.
+ +
+ +3.0.0b20 (2018-11-01)
+ ++++++++++++++++++++++
+ +
+ +Bug fixes:
+ +
+ +- Includes bug fixes from 2.16.2 and 2.16.3.
+ +
+ +3.0.0b19 (2018-10-24)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Support partial loading of nested fields (:pr:`438`). Thanks
+ +  :user:`arbor-dwatson` for the PR. *Note*: Subclasses of ``fields.Nested``
+ +  now take an additional ``partial`` parameter in the ``_deserialize``
+ +  method.
+ +
+ +Bug fixes:
+ +
+ +- Restore ``Schema.TYPE_MAPPING``, which was removed in 3.0.0b17 (:issue:`1012`).
+ +
+ +3.0.0b18 (2018-10-15)
+ ++++++++++++++++++++++
+ +
+ +Bug fixes:
+ +
+ +- Fix ``Date`` deserialization when using custom format (:issue:`1001`). Thanks
+ +  :user:`Ondkloss` for reporting.
+ +
+ +Deprecations/Removals:
+ +
+ +- ``prefix`` parameter or ``Schema`` class is removed (:issue:`991`). The same
+ +  can be achieved using a ``@post_dump`` method.
+ +
+ +
+ +3.0.0b17 (2018-10-13)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Add ``format`` option to ``Date`` field (:pr:`869`).
+ +- *Backwards-incompatible*: Rename ``DateTime``'s ``dateformat`` Meta option
+ +  to ``datetimeformat``. ``dateformat`` now applies to ``Date`` (:pr:`869`).
+ +  Thanks :user:`knagra` for implementing these changes.
+ +- Enforce ISO 8601 when deserializing date and time (:issue:`899`).
+ +  Thanks :user:`dushr` for the report and the work on the PR.
+ +- *Backwards-incompatible*: Raise ``ValueError`` on ``Schema`` instantiation in
+ +  case of ``attribute`` or ``data_key`` collision (:pr:`992`).
+ +
+ +Bug fixes:
+ +
+ +- Fix inconsistencies in field inference by refactoring the inference feature
+ +  into a dedicated field (:issue:`809`). Thanks :user:`taion` for the PR.
+ +- When ``unknown`` is not passed to ``Nested``, default to nested ``Schema``
+ +  ``unknown`` meta option rather than ``RAISE`` (:pr:`963`).
+ +  Thanks :user:`vgavro` for the PR.
+ +- Fix loading behavior of ``fields.Pluck`` (:pr:`990`).
+ +- Includes bug fix from 2.16.0.
+ +
+ +3.0.0b16 (2018-09-20)
+ ++++++++++++++++++++++
+ +
+ +Bug fixes:
+ +
+ +- Fix ``root`` attribute for nested container fields
+ +  on inheriting schemas (:issue:`956`). Thanks :user:`bmcbu`
+ +  for reporting.
+ +
+ +3.0.0b15 (2018-09-18)
+ ++++++++++++++++++++++
+ +
+ +Bug fixes:
+ +
+ +- Raise ``ValidationError`` instead of ``TypeError`` when non-iterable types are
+ +  validated with ``many=True`` (:issue:`851`).
+ +- ``many=True`` no longer iterates over ``str`` and ``collections.abc.Mapping`` objects and instead
+ +  raises a ``ValidationError`` with ``{'_schema': ['Invalid input type.']}`` (:issue:`930`).
+ +- Return ``[]`` as ``ValidationError.valid_data`` instead of ``{}`` when
+ +  ``many=True`` (:issue:`907`).
+ +
+ +Thanks :user:`tuukkamustonen` for implementing these changes.
+ +
+ +3.0.0b14 (2018-09-15)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Add ``fields.Pluck`` for serializing a single field from a nested object
+ +  (:issue:`800`). Thanks :user:`timc13` for the feedback and :user:`deckar01`
+ +  for the implementation.
+ +- *Backwards-incompatible*: Passing a string argument as ``only`` to
+ +  ``fields.Nested`` is no longer supported. Use ``fields.Pluck`` instead
+ +  (:issue:`800`).
+ +- Raise a `StringNotCollectionError` if ``only`` or ``exclude`` is
+ +  passed as a string to ``fields.Nested`` (:pr:`931`).
+ +- *Backwards-incompatible*: ``Float`` takes an ``allow_nan`` parameter to
+ +  explicitly allow serializing and deserializing special values (``nan``,
+ +  ``inf`` and ``-inf``). ``allow_nan`` defaults to ``False``.
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: ``Nested`` field now defaults to ``unknown=RAISE``
+ +  instead of ``EXCLUDE``. This harmonizes behavior with ``Schema`` that
+ +  already defaults to ``RAISE`` (:issue:`908`). Thanks :user:`tuukkamustonen`.
+ +- Tested against Python 3.7.
+ +
+ +3.0.0b13 (2018-08-04)
+ ++++++++++++++++++++++
+ +
+ +Bug fixes:
+ +
+ +- Errors reported by a schema-level validator for a field in a ``Nested`` field
+ +  are stored under corresponding field name, not ``_schema`` key (:pr:`862`).
+ +- Includes bug fix from 2.15.4.
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: The ``unknown`` option now defaults to ``RAISE``
+ +  (`#524 (comment) <https://github.com/marshmallow-code/marshmallow/issues/524#issuecomment-397165731>`_,
+ +  :issue:`851`).
+ +- *Backwards-incompatible*: When a schema error is raised with a ``dict`` as
+ +  payload, the ``dict`` overwrites any existing error list. Before this change,
+ +  it would be appended to the list.
+ +- Raise a `StringNotCollectionError` if ``only`` or ``exclude`` is
+ +  passed as a string (:issue:`316`). Thanks :user:`paulocheque` for
+ +  reporting.
+ +
+ +3.0.0b12 (2018-07-04)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- The behavior to apply when encountering unknown fields while deserializing
+ +  can be controlled with the ``unknown`` option (:issue:`524`,
+ +  :issue:`747`, :issue:`127`).
+ +  It makes it possible to either "include", "exclude", or "raise".
+ +  Thanks :user:`tuukkamustonen` for the suggestion and thanks
+ +  :user:`ramnes` for the PR.
+ +
+ +.. warning::
+ +
+ +  The default for ``unknown`` will be changed to ``RAISE`` in the
+ +  next release.
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: Pre/Post-processors MUST return modified data.
+ +  Returning ``None`` does not imply data were mutated (:issue:`347`). Thanks
+ +  :user:`tdevelioglu` for reporting.
+ +- *Backwards-incompatible*: ``only`` and ``exclude`` are bound by
+ +  declared and additional fields. A ``ValueError`` is raised if invalid
+ +  fields are passed (:issue:`636`). Thanks :user:`jan-23` for reporting.
+ +  Thanks :user:`ikilledthecat` and :user:`deckar01` for the PRs.
+ +- Format code using pre-commit (:pr:`855`).
+ +
+ +Deprecations/Removals:
+ +
+ +- ``ValidationError.fields`` is removed (:issue:`840`). Access field
+ +  instances from ``Schema.fields``.
+ +
+ +3.0.0b11 (2018-05-20)
+ ++++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Clean up code for schema hooks (:pr:`814`). Thanks :user:`taion`.
+ +- Minor performance improvement from simplifying ``utils.get_value`` (:pr:`811`). Thanks again :user:`taion`.
+ +- Add ``require_tld`` argument to ``fields.URL`` (:issue:`749`). Thanks
+ +  :user:`DenerKup` for reporting and thanks :user:`surik00` for the PR.
+ +- ``fields.UUID`` deserializes ``bytes`` strings using ``UUID(bytes=b'...')`` (:pr:`625`).
+ +  Thanks :user:`JeffBerger` for the suggestion and the PR.
+ +
+ +Bug fixes:
+ +
+ +- Fields nested within ``Dict`` correctly inherit context from their
+ +  parent schema (:issue:`820`). Thanks :user:`RosanneZe` for reporting
+ +  and :user:`deckar01` for the PR.
+ +- Includes bug fix from 2.15.3.
+ +
+ +
+ +3.0.0b10 (2018-05-10)
+ ++++++++++++++++++++++
+ +
+ +Bug fixes:
+ +
+ +- Includes bugfixes from 2.15.2.
+ +
+ +3.0.0b9 (2018-04-25)
+ +++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- *Backwards-incompatible*: ``missing`` and ``default`` values are
+ +  passed in deserialized form (:issue:`378`). Thanks :user:`chadrik` for
+ +  the suggestion and thanks :user:`lafrech` for the PR.
+ +
+ +Bug fixes:
+ +
+ +- Includes the bugfix from 2.15.1.
+ +
+ +3.0.0b8 (2018-03-24)
+ +++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- *Backwards-incompatible*: Add ``data_key`` parameter to fields for
+ +  specifying the key in the input and output data dict. This
+ +  parameter replaces both ``load_from`` and ``dump_to`` (:issue:`717`).
+ +  Thanks :user:`lafrech`.
+ +- *Backwards-incompatible*: When `pass_original=True` is passed to one
+ +  of the decorators and a collection is being (de)serialized, the
+ +  `original_data` argument will be a single object unless
+ +  `pass_many=True` is also passed to the decorator (:issue:`315`,
+ +  :issue:`743`). Thanks :user:`stj` for the PR.
+ +- *Backwards-incompatible*: Don't recursively check nested required
+ +  fields when the Nested field's key is missing (:issue:`319`). This
+ +  reverts :pr:`235`. Thanks :user:`chekunkov` reporting and thanks
+ +  :user:`lafrech` for the PR.
+ +- *Backwards-incompatible*: Change error message collection for `Dict` field (:issue:`730`). Note:
+ +  this is backwards-incompatible with previous 3.0.0bX versions.
+ +  Thanks :user:`shabble` for the report and thanks :user:`lafrech` for the PR.
+ +
+ +3.0.0b7 (2018-02-03)
+ +++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- *Backwards-incompatible*: Schemas are always strict (:issue:`377`).
+ +  The ``strict`` parameter is removed.
+ +- *Backwards-incompatible*: `Schema().load` and `Schema().dump` return ``data`` instead of a
+ +  ``(data, errors)`` tuple (:issue:`598`).
+ +- *Backwards-incomaptible*: `Schema().load(None)` raises a
+ +  `ValidationError` (:issue:`511`).
+ +
+ +See :ref:`upgrading_3_0` for a guide on updating your code.
+ +
+ +Thanks :user:`lafrech` for implementing these changes.
+ +Special thanks to :user:`MichalKononenko`, :user:`douglas-treadwell`, and
+ +:user:`maximkulkin` for the discussions on these changes.
+ +
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: Field name is not checked when ``load_from``
+ +  is specified (:pr:`714`). Thanks :user:`lafrech`.
+ +
+ +Support:
+ +
+ +- Add `Code of Conduct <https://marshmallow.readthedocs.io/en/dev/code_of_conduct.html>`_.
+ +
+ +
+ +3.0.0b6 (2018-01-02)
+ +++++++++++++++++++++
+ +
+ +Bug fixes:
+ +
+ +- Fixes `ValidationError.valid_data` when a nested field contains errors
+ +  (:issue:`710`). This bug was introduced in 3.0.0b3. Thanks
+ +  :user:`lafrech`.
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: ``Email`` and ``URL`` fields don't validate
+ +  on serialization (:issue:`608`). This makes them more consistent with the other
+ +  fields and improves serialization performance. Thanks again :user:`lafrech`.
+ +- ``validate.URL`` requires square brackets around IPv6 URLs (:issue:`707`). Thanks :user:`harlov`.
+ +
+ +3.0.0b5 (2017-12-30)
+ +++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Add support for structured dictionaries by providing values and keys arguments to the
+ +  ``Dict`` field's constructor. This mirrors the ``List``
+ +  field's ability to validate its items (:issue:`483`). Thanks :user:`deckar01`.
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: ``utils.from_iso`` is deprecated in favor of
+ +  ``utils.from_iso_datetime`` (:issue:`694`). Thanks :user:`sklarsa`.
+ +
+ +3.0.0b4 (2017-10-23)
+ +++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Add support for millisecond, minute, hour, and week precisions to
+ +  ``fields.TimeDelta`` (:issue:`537`). Thanks :user:`Fedalto` for the
+ +  suggestion and the PR.
+ +- Includes features from release 2.14.0.
+ +
+ +
+ +Support:
+ +
+ +- Copyright year in docs uses CHANGELOG.rst's modified date for
+ +  reproducible builds (:issue:`679`). Thanks :user:`bmwiedemann`.
+ +- Test against Python 3.6 in tox. Thanks :user:`Fedalto`.
+ +- Fix typo in exception message (:issue:`659`). Thanks :user:`wonderbeyond`
+ +  for reporting and thanks :user:`yoichi` for the PR.
+ +
+ +3.0.0b3 (2017-08-20)
+ +++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Add ``valid_data`` attribute to ``ValidationError``.
+ +- Add ``strict`` parameter to ``Integer`` (:issue:`667`). Thanks
+ +  :user:`yoichi`.
+ +
+ +Deprecations/Removals:
+ +
+ +- Deprecate ``json_module`` option in favor of ``render_module`` (:issue:`364`, :issue:`130`). Thanks :user:`justanr` for the suggestion.
+ +
+ +Bug fixes:
+ +
+ +- Includes bug fixes from releases 2.13.5 and 2.13.6.
+ +- *Backwards-incompatible* : ``Number`` fields don't accept booleans as valid input (:issue:`623`). Thanks :user:`tuukkamustonen` for the suggestion and thanks :user:`rowillia` for the PR.
+ +
+ +Support:
+ +
+ +- Add benchmark script. Thanks :user:`rowillia`.
+ +
+ +3.0.0b2 (2017-03-19)
+ +++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- Add ``truthy`` and ``falsy`` params to ``fields.Boolean`` (:issue:`580`). Thanks :user:`zwack` for the PR. Note: This is potentially a breaking change if your code passes the `default` parameter positionally. Pass `default` as a keyword argument instead, e.g. ``fields.Boolean(default=True)``.
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: ``validate.ContainsOnly`` allows empty and duplicate values (:issue:`516`, :issue:`603`). Thanks :user:`maximkulkin` for the suggestion and thanks :user:`lafrech` for the PR.
+ +
+ +Bug fixes:
+ +
+ +- Includes bug fixes from release 2.13.4.
+ +
+ +3.0.0b1 (2017-03-10)
+ +++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- ``fields.Nested`` respects ``only='field'`` when deserializing (:issue:`307`). Thanks :user:`erlingbo` for the suggestion and the PR.
+ +- ``fields.Boolean`` parses ``"on"``/``"off"`` (:issue:`580`). Thanks :user:`marcellarius` for the suggestion.
+ +
+ +
+ +Other changes:
+ +
+ +- Includes changes from release 2.13.2.
+ +- *Backwards-incompatible*: ``skip_on_field_errors`` defaults to ``True`` for ``validates_schema`` (:issue:`352`).
+ +
+ +3.0.0a1 (2017-02-26)
+ +++++++++++++++++++++
+ +
+ +Features:
+ +
+ +- ``dump_only`` and ``load_only`` for ``Function`` and ``Method`` are set based on ``serialize`` and ``deserialize`` arguments (:issue:`328`).
+ +
+ +Other changes:
+ +
+ +- *Backwards-incompatible*: ``fields.Method`` and ``fields.Function`` no longer swallow ``AttributeErrors`` (:issue:`395`). Thanks :user:`bereal` for the suggestion.
+ +- *Backwards-incompatible*: ``validators.Length`` is no longer a subclass of ``validators.Range`` (:issue:`458`). Thanks :user:`deckar01` for the catch and patch.
+ +- *Backwards-incompatible*: ``utils.get_func_args`` no longer returns bound arguments. This is consistent with the behavior of ``inspect.signature``. This change prevents a DeprecationWarning on Python 3.5 (:issue:`415`, :issue:`479`). Thanks :user:`deckar01` for the PR.
+ +- *Backwards-incompatible*: Change the signature of ``utils.get_value`` and ``Schema.get_attribute`` for consistency with Python builtins (e.g. ``getattr``) (:issue:`341`). Thanks :user:`stas` for reporting and thanks :user:`deckar01` for the PR.
+ +- *Backwards-incompatible*: Don't unconditionally call callable attributes (:issue:`430`, reverts :issue:`242`). Thanks :user:`mirko` for the suggestion.
+ +- Drop support for Python 2.6 and 3.3.
+ +
+ +Deprecation/Removals:
+ +
+ +- Remove ``__error_handler__``, ``__accessor__``, ``@Schema.error_handler``, and ``@Schema.accessor``. Override ``Schema.handle_error`` and ``Schema.get_attribute`` instead.
+ +- Remove ``func`` parameter of ``fields.Function``. Remove ``method_name`` parameter of ``fields.Method`` (issue:`325`). Use the ``serialize`` parameter instead.
+ +- Remove ``extra`` parameter from ``Schema``. Use a ``@post_dump`` method to add additional data.
+ +
++ 2.20.2 (2019-08-20)
++ *******************
++ 
++ Bug fixes:
++ 
++ - Prevent warning about importing from ``collections`` on Python 3.7
++   (:pr:`1354`). Thanks :user:`nicktimko` for the PR.
++ 
++ 2.20.1 (2019-08-13)
++ *******************
++ 
++ Bug fixes:
++ 
++ - Fix bug that raised ``TypeError`` when invalid data type is
++   passed to a nested schema with ``@validates`` (:issue:`1342`).
++ 
+  2.20.0 (2019-08-10)
+  *******************
+  
++ git diff b40a0f4e33823e6d0f341f7e8684e359a99060d1
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z x ']'
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1='(testbed) '
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=3
++++ CONDA_SHLVL=3
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=4
+++ CONDA_SHLVL=4
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_3=/opt/miniconda3
+++ CONDA_PREFIX_3=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ python -m pip install -e '.[dev]'
+Obtaining file:///testbed
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: pytest in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from marshmallow==3.0.0) (8.3.2)
+Requirement already satisfied: pytz in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from marshmallow==3.0.0) (2024.1)
+Requirement already satisfied: simplejson in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from marshmallow==3.0.0) (3.19.3)
+Requirement already satisfied: flake8==3.7.8 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from marshmallow==3.0.0) (3.7.8)
+Requirement already satisfied: flake8-bugbear==19.8.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from marshmallow==3.0.0) (19.8.0)
+Requirement already satisfied: pre-commit~=1.17 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from marshmallow==3.0.0) (1.21.0)
+Requirement already satisfied: tox in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from marshmallow==3.0.0) (4.18.0)
+Requirement already satisfied: entrypoints<0.4.0,>=0.3.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from flake8==3.7.8->marshmallow==3.0.0) (0.3)
+Requirement already satisfied: pyflakes<2.2.0,>=2.1.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from flake8==3.7.8->marshmallow==3.0.0) (2.1.1)
+Requirement already satisfied: pycodestyle<2.6.0,>=2.5.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from flake8==3.7.8->marshmallow==3.0.0) (2.5.0)
+Requirement already satisfied: mccabe<0.7.0,>=0.6.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from flake8==3.7.8->marshmallow==3.0.0) (0.6.1)
+Requirement already satisfied: attrs in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from flake8-bugbear==19.8.0->marshmallow==3.0.0) (24.2.0)
+Requirement already satisfied: aspy.yaml in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pre-commit~=1.17->marshmallow==3.0.0) (1.3.0)
+Requirement already satisfied: cfgv>=2.0.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pre-commit~=1.17->marshmallow==3.0.0) (3.4.0)
+Requirement already satisfied: identify>=1.0.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pre-commit~=1.17->marshmallow==3.0.0) (2.6.0)
+Requirement already satisfied: nodeenv>=0.11.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pre-commit~=1.17->marshmallow==3.0.0) (1.9.1)
+Requirement already satisfied: pyyaml in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pre-commit~=1.17->marshmallow==3.0.0) (6.0.2)
+Requirement already satisfied: six in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pre-commit~=1.17->marshmallow==3.0.0) (1.16.0)
+Requirement already satisfied: toml in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pre-commit~=1.17->marshmallow==3.0.0) (0.10.2)
+Requirement already satisfied: virtualenv>=15.2 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pre-commit~=1.17->marshmallow==3.0.0) (20.26.3)
+Requirement already satisfied: iniconfig in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest->marshmallow==3.0.0) (2.0.0)
+Requirement already satisfied: packaging in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest->marshmallow==3.0.0) (24.1)
+Requirement already satisfied: pluggy<2,>=1.5 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest->marshmallow==3.0.0) (1.5.0)
+Requirement already satisfied: exceptiongroup>=1.0.0rc8 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest->marshmallow==3.0.0) (1.2.2)
+Requirement already satisfied: tomli>=1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest->marshmallow==3.0.0) (2.0.1)
+Requirement already satisfied: cachetools>=5.4 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from tox->marshmallow==3.0.0) (5.5.0)
+Requirement already satisfied: chardet>=5.2 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from tox->marshmallow==3.0.0) (5.2.0)
+Requirement already satisfied: colorama>=0.4.6 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from tox->marshmallow==3.0.0) (0.4.6)
+Requirement already satisfied: filelock>=3.15.4 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from tox->marshmallow==3.0.0) (3.15.4)
+Requirement already satisfied: platformdirs>=4.2.2 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from tox->marshmallow==3.0.0) (4.2.2)
+Requirement already satisfied: pyproject-api>=1.7.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from tox->marshmallow==3.0.0) (1.7.1)
+Requirement already satisfied: distlib<1,>=0.3.7 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from virtualenv>=15.2->pre-commit~=1.17->marshmallow==3.0.0) (0.3.8)
+Building wheels for collected packages: marshmallow
+  Building editable for marshmallow (pyproject.toml): started
+  Building editable for marshmallow (pyproject.toml): finished with status 'done'
+  Created wheel for marshmallow: filename=marshmallow-3.0.0-0.editable-py2.py3-none-any.whl size=4454 sha256=eb7a00268e353d81e526057bc151be281c46bbc326535a09f705e8ec77a3a49c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-b1ens5zu/wheels/7d/66/67/70d1ee2124ccf21d601c352e25cdca10f611f7c8b3f9ffb9e4
+Successfully built marshmallow
+Installing collected packages: marshmallow
+  Attempting uninstall: marshmallow
+    Found existing installation: marshmallow 3.0.0
+    Uninstalling marshmallow-3.0.0:
+      Successfully uninstalled marshmallow-3.0.0
+Successfully installed marshmallow-3.0.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ git checkout b40a0f4e33823e6d0f341f7e8684e359a99060d1 tests/test_fields.py
+Updated 0 paths from 56ab416
++ git apply -v -
+Checking patch tests/test_fields.py...
+Applied patch tests/test_fields.py cleanly.
++ pytest -rA tests/test_fields.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-8.3.2, pluggy-1.5.0 -- /opt/miniconda3/envs/testbed/bin/python
+cachedir: .pytest_cache
+rootdir: /testbed
+configfile: setup.cfg
+collecting ... collected 77 items
+
+tests/test_fields.py::test_field_aliases[Integer-Integer] PASSED         [  1%]
+tests/test_fields.py::test_field_aliases[String-String] PASSED           [  2%]
+tests/test_fields.py::test_field_aliases[Boolean-Boolean] PASSED         [  3%]
+tests/test_fields.py::test_field_aliases[Url-Url] PASSED                 [  5%]
+tests/test_fields.py::TestField::test_repr PASSED                        [  6%]
+tests/test_fields.py::TestField::test_error_raised_if_uncallable_validator_passed PASSED [  7%]
+tests/test_fields.py::TestField::test_error_raised_if_missing_is_set_on_required_field PASSED [  9%]
+tests/test_fields.py::TestField::test_custom_field_receives_attr_and_obj PASSED [ 10%]
+tests/test_fields.py::TestField::test_custom_field_receives_data_key_if_set PASSED [ 11%]
+tests/test_fields.py::TestField::test_custom_field_follows_data_key_if_set PASSED [ 12%]
+tests/test_fields.py::TestParentAndName::test_simple_field_parent_and_name PASSED [ 14%]
+tests/test_fields.py::TestParentAndName::test_unbound_field_root_returns_none PASSED [ 15%]
+tests/test_fields.py::TestParentAndName::test_list_field_inner_parent_and_name PASSED [ 16%]
+tests/test_fields.py::TestParentAndName::test_tuple_field_inner_parent_and_name PASSED [ 18%]
+tests/test_fields.py::TestParentAndName::test_mapping_field_inner_parent_and_name PASSED [ 19%]
+tests/test_fields.py::TestParentAndName::test_simple_field_root PASSED   [ 20%]
+tests/test_fields.py::TestParentAndName::test_list_field_inner_root PASSED [ 22%]
+tests/test_fields.py::TestParentAndName::test_tuple_field_inner_root PASSED [ 23%]
+tests/test_fields.py::TestParentAndName::test_list_root_inheritance PASSED [ 24%]
+tests/test_fields.py::TestParentAndName::test_dict_root_inheritance PASSED [ 25%]
+tests/test_fields.py::TestParentAndName::test_datetime_list_inner_format FAILED [ 27%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[String] PASSED [ 28%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Integer] PASSED [ 29%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Boolean] PASSED [ 31%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Float] PASSED [ 32%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Number] PASSED [ 33%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[DateTime] PASSED [ 35%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Time] PASSED [ 36%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Date] PASSED [ 37%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[TimeDelta] PASSED [ 38%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Dict] PASSED [ 40%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Url] PASSED [ 41%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Email] PASSED [ 42%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[UUID] PASSED [ 44%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Decimal] PASSED [ 45%]
+tests/test_fields.py::TestErrorMessages::test_default_error_messages_get_merged_with_parent_error_messages_cstm_msg PASSED [ 46%]
+tests/test_fields.py::TestErrorMessages::test_default_error_messages_get_merged_with_parent_error_messages PASSED [ 48%]
+tests/test_fields.py::TestErrorMessages::test_make_error[required-Missing data for required field.] PASSED [ 49%]
+tests/test_fields.py::TestErrorMessages::test_make_error[null-Field may not be null.] PASSED [ 50%]
+tests/test_fields.py::TestErrorMessages::test_make_error[custom-Custom error message.] PASSED [ 51%]
+tests/test_fields.py::TestErrorMessages::test_make_error[validator_failed-Invalid value.] PASSED [ 53%]
+tests/test_fields.py::TestErrorMessages::test_fail[required-Missing data for required field.] PASSED [ 54%]
+tests/test_fields.py::TestErrorMessages::test_fail[null-Field may not be null.] PASSED [ 55%]
+tests/test_fields.py::TestErrorMessages::test_fail[custom-Custom error message.] PASSED [ 57%]
+tests/test_fields.py::TestErrorMessages::test_fail[validator_failed-Invalid value.] PASSED [ 58%]
+tests/test_fields.py::TestErrorMessages::test_make_error_key_doesnt_exist PASSED [ 59%]
+tests/test_fields.py::TestNestedField::test_nested_only_and_exclude_as_string[only] PASSED [ 61%]
+tests/test_fields.py::TestNestedField::test_nested_only_and_exclude_as_string[exclude] PASSED [ 62%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-exclude] PASSED [ 63%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-include] PASSED [ 64%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-raise] PASSED [ 66%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-exclude] PASSED [ 67%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-include] PASSED [ 68%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-raise] PASSED [ 70%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-exclude] PASSED [ 71%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-include] PASSED [ 72%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-raise] PASSED [ 74%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-exclude] PASSED [ 75%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-include] PASSED [ 76%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-raise] PASSED [ 77%]
+tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[only] PASSED [ 79%]
+tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[exclude] PASSED [ 80%]
+tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only] PASSED [ 81%]
+tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only] PASSED [ 83%]
+tests/test_fields.py::TestListNested::test_list_nested_only_and_exclude_merged_with_nested[only-expected0] PASSED [ 84%]
+tests/test_fields.py::TestListNested::test_list_nested_only_and_exclude_merged_with_nested[exclude-expected1] PASSED [ 85%]
+tests/test_fields.py::TestListNested::test_list_nested_partial_propagated_to_nested PASSED [ 87%]
+tests/test_fields.py::TestTupleNested::test_tuple_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only] PASSED [ 88%]
+tests/test_fields.py::TestTupleNested::test_tuple_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only] PASSED [ 89%]
+tests/test_fields.py::TestTupleNested::test_tuple_nested_partial_propagated_to_nested PASSED [ 90%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[only] PASSED [ 92%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[exclude] PASSED [ 93%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only] PASSED [ 94%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only] PASSED [ 96%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[only-expected0] PASSED [ 97%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[exclude-expected1] PASSED [ 98%]
+tests/test_fields.py::TestDictNested::test_dict_nested_partial_propagated_to_nested PASSED [100%]
+
+=================================== FAILURES ===================================
+______________ TestParentAndName.test_datetime_list_inner_format _______________
+tests/test_fields.py:182: in test_datetime_list_inner_format
+    schema = MySchema()
+src/marshmallow/schema.py:383: in __init__
+    self.fields = self._init_fields()
+src/marshmallow/schema.py:913: in _init_fields
+    self._bind_field(field_name, field_obj)
+src/marshmallow/schema.py:969: in _bind_field
+    field_obj._bind_to_schema(field_name, self)
+src/marshmallow/fields.py:636: in _bind_to_schema
+    self.inner._bind_to_schema(field_name, self)
+src/marshmallow/fields.py:1117: in _bind_to_schema
+    or getattr(schema.opts, self.SCHEMA_OPTS_VAR_NAME)
+E   AttributeError: 'List' object has no attribute 'opts'
+=============================== warnings summary ===============================
+src/marshmallow/__init__.py:17
+  /testbed/src/marshmallow/__init__.py:17: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    __version_info__ = tuple(LooseVersion(__version__).version)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_fields.py::test_field_aliases[Integer-Integer]
+PASSED tests/test_fields.py::test_field_aliases[String-String]
+PASSED tests/test_fields.py::test_field_aliases[Boolean-Boolean]
+PASSED tests/test_fields.py::test_field_aliases[Url-Url]
+PASSED tests/test_fields.py::TestField::test_repr
+PASSED tests/test_fields.py::TestField::test_error_raised_if_uncallable_validator_passed
+PASSED tests/test_fields.py::TestField::test_error_raised_if_missing_is_set_on_required_field
+PASSED tests/test_fields.py::TestField::test_custom_field_receives_attr_and_obj
+PASSED tests/test_fields.py::TestField::test_custom_field_receives_data_key_if_set
+PASSED tests/test_fields.py::TestField::test_custom_field_follows_data_key_if_set
+PASSED tests/test_fields.py::TestParentAndName::test_simple_field_parent_and_name
+PASSED tests/test_fields.py::TestParentAndName::test_unbound_field_root_returns_none
+PASSED tests/test_fields.py::TestParentAndName::test_list_field_inner_parent_and_name
+PASSED tests/test_fields.py::TestParentAndName::test_tuple_field_inner_parent_and_name
+PASSED tests/test_fields.py::TestParentAndName::test_mapping_field_inner_parent_and_name
+PASSED tests/test_fields.py::TestParentAndName::test_simple_field_root
+PASSED tests/test_fields.py::TestParentAndName::test_list_field_inner_root
+PASSED tests/test_fields.py::TestParentAndName::test_tuple_field_inner_root
+PASSED tests/test_fields.py::TestParentAndName::test_list_root_inheritance
+PASSED tests/test_fields.py::TestParentAndName::test_dict_root_inheritance
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[String]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Integer]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Boolean]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Float]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Number]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[DateTime]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Time]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Date]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[TimeDelta]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Dict]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Url]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Email]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[UUID]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Decimal]
+PASSED tests/test_fields.py::TestErrorMessages::test_default_error_messages_get_merged_with_parent_error_messages_cstm_msg
+PASSED tests/test_fields.py::TestErrorMessages::test_default_error_messages_get_merged_with_parent_error_messages
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error[required-Missing data for required field.]
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error[null-Field may not be null.]
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error[custom-Custom error message.]
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error[validator_failed-Invalid value.]
+PASSED tests/test_fields.py::TestErrorMessages::test_fail[required-Missing data for required field.]
+PASSED tests/test_fields.py::TestErrorMessages::test_fail[null-Field may not be null.]
+PASSED tests/test_fields.py::TestErrorMessages::test_fail[custom-Custom error message.]
+PASSED tests/test_fields.py::TestErrorMessages::test_fail[validator_failed-Invalid value.]
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error_key_doesnt_exist
+PASSED tests/test_fields.py::TestNestedField::test_nested_only_and_exclude_as_string[only]
+PASSED tests/test_fields.py::TestNestedField::test_nested_only_and_exclude_as_string[exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-include]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-raise]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-include]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-raise]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-include]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-raise]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-include]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-raise]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[only]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[exclude]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_and_exclude_merged_with_nested[only-expected0]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_and_exclude_merged_with_nested[exclude-expected1]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_partial_propagated_to_nested
+PASSED tests/test_fields.py::TestTupleNested::test_tuple_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only]
+PASSED tests/test_fields.py::TestTupleNested::test_tuple_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only]
+PASSED tests/test_fields.py::TestTupleNested::test_tuple_nested_partial_propagated_to_nested
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[only]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[exclude]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[only-expected0]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[exclude-expected1]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_partial_propagated_to_nested
+FAILED tests/test_fields.py::TestParentAndName::test_datetime_list_inner_format
+=================== 1 failed, 76 passed, 1 warning in 0.27s ====================
++ git checkout b40a0f4e33823e6d0f341f7e8684e359a99060d1 tests/test_fields.py
+Updated 1 path from 56ab416

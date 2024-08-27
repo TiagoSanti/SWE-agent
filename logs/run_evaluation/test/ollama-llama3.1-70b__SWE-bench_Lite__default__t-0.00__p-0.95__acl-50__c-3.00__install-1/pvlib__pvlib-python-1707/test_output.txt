@@ -1,0 +1,589 @@
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /opt/miniconda3/bin/conda
+++++ dirname /opt/miniconda3/bin
++++ PATH=/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_1=/opt/miniconda3
+++ CONDA_PREFIX_1=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /testbed
++ git config --global --add safe.directory /testbed
++ cd /testbed
++ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	reproduce_bug.py
+
+nothing added to commit but untracked files present (use "git add" to track)
++ git show
+commit 40e9e978c170bdde4eeee1547729417665dbc34c
+Author: Mark Mikofski <bwana.marko@yahoo.com>
+Date:   Fri Jun 9 18:24:39 2023 -0700
+
+    fix recombination args in pvsystem.maximum_power_point (#1733)
+    
+    * fix recombination args in pvsystem.maximum_power_point
+    
+    * d2mutau and NsVbi were hardcoded instead of passing through the
+      arguments to the function
+    
+    * fix stickler
+    
+    * Update docs/sphinx/source/whatsnew/v0.9.6.rst
+    
+    remove "fix" from whatsnew
+    
+    Co-authored-by: Cliff Hansen <cwhanse@sandia.gov>
+    
+    * Apply suggestions from code review
+    
+    ---------
+    
+    Co-authored-by: Cliff Hansen <cwhanse@sandia.gov>
+    Co-authored-by: Kevin Anderson <kevin.anderso@gmail.com>
+
+diff --git a/docs/sphinx/source/whatsnew/v0.9.6.rst b/docs/sphinx/source/whatsnew/v0.9.6.rst
+index 729de3e..889f456 100644
+--- a/docs/sphinx/source/whatsnew/v0.9.6.rst
++++ b/docs/sphinx/source/whatsnew/v0.9.6.rst
+@@ -53,6 +53,8 @@ Bug fixes
+ ~~~~~~~~~
+ * `data` can no longer be left unspecified in
+   :py:meth:`pvlib.modelchain.ModelChain.run_model_from_effective_irradiance`. (:issue:`1713`, :pull:`1720`)
++* ``d2mutau`` and ``NsVbi`` were hardcoded in :py:func:`pvlib.pvsystem.max_power_point` instead of
++  passing through the arguments to the function. (:pull:`1733`)
+ 
+ Testing
+ ~~~~~~~
+diff --git a/pvlib/pvsystem.py b/pvlib/pvsystem.py
+index 6d5a5b2..bdab5d6 100644
+--- a/pvlib/pvsystem.py
++++ b/pvlib/pvsystem.py
+@@ -2918,8 +2918,7 @@ def max_power_point(photocurrent, saturation_current, resistance_series,
+     """
+     i_mp, v_mp, p_mp = _singlediode.bishop88_mpp(
+         photocurrent, saturation_current, resistance_series,
+-        resistance_shunt, nNsVth, d2mutau=0, NsVbi=np.Inf,
+-        method=method.lower()
++        resistance_shunt, nNsVth, d2mutau, NsVbi, method=method.lower()
+     )
+     if isinstance(photocurrent, pd.Series):
+         ivp = {'i_mp': i_mp, 'v_mp': v_mp, 'p_mp': p_mp}
+diff --git a/pvlib/tests/test_pvsystem.py b/pvlib/tests/test_pvsystem.py
+index 8d3caca..d5dcfc1 100644
+--- a/pvlib/tests/test_pvsystem.py
++++ b/pvlib/tests/test_pvsystem.py
+@@ -20,6 +20,8 @@ from pvlib.pvsystem import FixedMount
+ from pvlib import temperature
+ from pvlib._deprecation import pvlibDeprecationWarning
+ from pvlib.tools import cosd
++from pvlib.singlediode import VOLTAGE_BUILTIN
++from pvlib.tests.test_singlediode import get_pvsyst_fs_495
+ 
+ 
+ @pytest.mark.parametrize('iam_model,model_params', [
+@@ -1246,6 +1248,43 @@ def test_mpp_floats():
+         assert np.isclose(v, expected[k])
+ 
+ 
++def test_mpp_recombination():
++    """test max_power_point"""
++    pvsyst_fs_495 = get_pvsyst_fs_495()
++    IL, I0, Rs, Rsh, nNsVth = pvsystem.calcparams_pvsyst(
++        effective_irradiance=pvsyst_fs_495['irrad_ref'],
++        temp_cell=pvsyst_fs_495['temp_ref'],
++        alpha_sc=pvsyst_fs_495['alpha_sc'],
++        gamma_ref=pvsyst_fs_495['gamma_ref'],
++        mu_gamma=pvsyst_fs_495['mu_gamma'], I_L_ref=pvsyst_fs_495['I_L_ref'],
++        I_o_ref=pvsyst_fs_495['I_o_ref'], R_sh_ref=pvsyst_fs_495['R_sh_ref'],
++        R_sh_0=pvsyst_fs_495['R_sh_0'], R_sh_exp=pvsyst_fs_495['R_sh_exp'],
++        R_s=pvsyst_fs_495['R_s'],
++        cells_in_series=pvsyst_fs_495['cells_in_series'],
++        EgRef=pvsyst_fs_495['EgRef'])
++    out = pvsystem.max_power_point(
++        IL, I0, Rs, Rsh, nNsVth,
++        d2mutau=pvsyst_fs_495['d2mutau'],
++        NsVbi=VOLTAGE_BUILTIN*pvsyst_fs_495['cells_in_series'],
++        method='brentq')
++    expected_imp = pvsyst_fs_495['I_mp_ref']
++    expected_vmp = pvsyst_fs_495['V_mp_ref']
++    expected_pmp = expected_imp*expected_vmp
++    expected = {'i_mp': expected_imp,
++                'v_mp': expected_vmp,
++                'p_mp': expected_pmp}
++    assert isinstance(out, dict)
++    for k, v in out.items():
++        assert np.isclose(v, expected[k], 0.01)
++    out = pvsystem.max_power_point(
++        IL, I0, Rs, Rsh, nNsVth,
++        d2mutau=pvsyst_fs_495['d2mutau'],
++        NsVbi=VOLTAGE_BUILTIN*pvsyst_fs_495['cells_in_series'],
++        method='newton')
++    for k, v in out.items():
++        assert np.isclose(v, expected[k], 0.01)
++
++
+ def test_mpp_array():
+     """test max_power_point"""
+     IL, I0, Rs, Rsh, nNsVth = (np.array([7, 7]), 6e-7, .1, 20, .5)
++ git diff 40e9e978c170bdde4eeee1547729417665dbc34c
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z x ']'
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1='(testbed) '
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=3
++++ CONDA_SHLVL=3
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=4
+++ CONDA_SHLVL=4
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_3=/opt/miniconda3
+++ CONDA_PREFIX_3=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ python -m pip install -e '.[all]'
+Obtaining file:///testbed
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy>=1.16.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (1.26.4)
+Requirement already satisfied: pandas>=0.25.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (2.2.2)
+Requirement already satisfied: pytz in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (2024.1)
+Requirement already satisfied: requests in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (2.32.3)
+Requirement already satisfied: scipy>=1.4.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (1.13.1)
+Requirement already satisfied: h5py in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (3.11.0)
+Requirement already satisfied: cftime>=1.1.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (1.6.4)
+Requirement already satisfied: cython in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (3.0.11)
+Requirement already satisfied: docutils==0.15.2 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (0.15.2)
+Requirement already satisfied: ephem in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (4.1.5)
+Requirement already satisfied: ipython in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (8.18.1)
+Requirement already satisfied: matplotlib in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (3.9.2)
+Requirement already satisfied: netcdf4 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (1.7.1.post2)
+Requirement already satisfied: nrel-pysam in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (5.1.0)
+Requirement already satisfied: numba in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (0.60.0)
+Requirement already satisfied: pillow in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (10.4.0)
+Requirement already satisfied: pvfactors in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (1.5.2)
+Requirement already satisfied: pydata-sphinx-theme==0.8.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (0.8.1)
+Requirement already satisfied: pytest in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (8.3.2)
+Requirement already satisfied: pytest-cov in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (5.0.0)
+Requirement already satisfied: pytest-mock in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (3.14.0)
+Requirement already satisfied: pytest-remotedata in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (0.4.1)
+Requirement already satisfied: pytest-rerunfailures in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (14.0)
+Requirement already satisfied: pytest-timeout in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (2.3.1)
+Requirement already satisfied: requests-mock in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (1.12.1)
+Requirement already satisfied: siphon in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (0.9)
+Requirement already satisfied: sphinx==4.5.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (4.5.0)
+Requirement already satisfied: sphinx-gallery in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (0.16.0)
+Requirement already satisfied: sphinx-toggleprompt>=0.0.5 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (0.5.2)
+Requirement already satisfied: statsmodels in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvlib==0.9.6.dev21+g40e9e97) (0.14.2)
+Requirement already satisfied: beautifulsoup4 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pydata-sphinx-theme==0.8.1->pvlib==0.9.6.dev21+g40e9e97) (4.12.3)
+Requirement already satisfied: packaging in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pydata-sphinx-theme==0.8.1->pvlib==0.9.6.dev21+g40e9e97) (24.1)
+Requirement already satisfied: sphinxcontrib-applehelp in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (2.0.0)
+Requirement already satisfied: sphinxcontrib-devhelp in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (2.0.0)
+Requirement already satisfied: sphinxcontrib-jsmath in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (1.0.1)
+Requirement already satisfied: sphinxcontrib-htmlhelp>=2.0.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (2.1.0)
+Requirement already satisfied: sphinxcontrib-serializinghtml>=1.1.5 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (2.0.0)
+Requirement already satisfied: sphinxcontrib-qthelp in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (2.0.0)
+Requirement already satisfied: Jinja2>=2.3 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (3.1.4)
+Requirement already satisfied: Pygments>=2.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (2.18.0)
+Requirement already satisfied: snowballstemmer>=1.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (2.2.0)
+Requirement already satisfied: babel>=1.3 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (2.16.0)
+Requirement already satisfied: alabaster<0.8,>=0.7 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (0.7.16)
+Requirement already satisfied: imagesize in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (1.4.1)
+Requirement already satisfied: importlib-metadata>=4.4 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (8.4.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pandas>=0.25.0->pvlib==0.9.6.dev21+g40e9e97) (2.9.0.post0)
+Requirement already satisfied: tzdata>=2022.7 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pandas>=0.25.0->pvlib==0.9.6.dev21+g40e9e97) (2023.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from requests->pvlib==0.9.6.dev21+g40e9e97) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from requests->pvlib==0.9.6.dev21+g40e9e97) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from requests->pvlib==0.9.6.dev21+g40e9e97) (2.2.2)
+Requirement already satisfied: certifi>=2017.4.17 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from requests->pvlib==0.9.6.dev21+g40e9e97) (2024.7.4)
+Requirement already satisfied: decorator in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from ipython->pvlib==0.9.6.dev21+g40e9e97) (5.1.1)
+Requirement already satisfied: jedi>=0.16 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from ipython->pvlib==0.9.6.dev21+g40e9e97) (0.19.1)
+Requirement already satisfied: matplotlib-inline in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from ipython->pvlib==0.9.6.dev21+g40e9e97) (0.1.7)
+Requirement already satisfied: prompt-toolkit<3.1.0,>=3.0.41 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from ipython->pvlib==0.9.6.dev21+g40e9e97) (3.0.47)
+Requirement already satisfied: stack-data in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from ipython->pvlib==0.9.6.dev21+g40e9e97) (0.6.3)
+Requirement already satisfied: traitlets>=5 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from ipython->pvlib==0.9.6.dev21+g40e9e97) (5.14.3)
+Requirement already satisfied: typing-extensions in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from ipython->pvlib==0.9.6.dev21+g40e9e97) (4.12.2)
+Requirement already satisfied: exceptiongroup in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from ipython->pvlib==0.9.6.dev21+g40e9e97) (1.2.2)
+Requirement already satisfied: pexpect>4.3 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from ipython->pvlib==0.9.6.dev21+g40e9e97) (4.9.0)
+Requirement already satisfied: contourpy>=1.0.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from matplotlib->pvlib==0.9.6.dev21+g40e9e97) (1.2.1)
+Requirement already satisfied: cycler>=0.10 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from matplotlib->pvlib==0.9.6.dev21+g40e9e97) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from matplotlib->pvlib==0.9.6.dev21+g40e9e97) (4.53.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from matplotlib->pvlib==0.9.6.dev21+g40e9e97) (1.4.5)
+Requirement already satisfied: pyparsing>=2.3.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from matplotlib->pvlib==0.9.6.dev21+g40e9e97) (3.1.2)
+Requirement already satisfied: importlib-resources>=3.2.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from matplotlib->pvlib==0.9.6.dev21+g40e9e97) (6.4.4)
+Requirement already satisfied: python-dotenv in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from nrel-pysam->pvlib==0.9.6.dev21+g40e9e97) (1.0.1)
+Requirement already satisfied: llvmlite<0.44,>=0.43.0dev0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from numba->pvlib==0.9.6.dev21+g40e9e97) (0.43.0)
+Requirement already satisfied: shapely<2,>=1.6.4.post2 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvfactors->pvlib==0.9.6.dev21+g40e9e97) (1.8.5.post1)
+Requirement already satisfied: future in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvfactors->pvlib==0.9.6.dev21+g40e9e97) (1.0.0)
+Requirement already satisfied: six in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pvfactors->pvlib==0.9.6.dev21+g40e9e97) (1.16.0)
+Requirement already satisfied: iniconfig in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest->pvlib==0.9.6.dev21+g40e9e97) (2.0.0)
+Requirement already satisfied: pluggy<2,>=1.5 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest->pvlib==0.9.6.dev21+g40e9e97) (1.5.0)
+Requirement already satisfied: tomli>=1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pytest->pvlib==0.9.6.dev21+g40e9e97) (2.0.1)
+Requirement already satisfied: coverage>=5.2.1 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from coverage[toml]>=5.2.1->pytest-cov->pvlib==0.9.6.dev21+g40e9e97) (7.6.1)
+Requirement already satisfied: protobuf>=3.0.0a3 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from siphon->pvlib==0.9.6.dev21+g40e9e97) (5.28.0rc3)
+Requirement already satisfied: patsy>=0.5.6 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from statsmodels->pvlib==0.9.6.dev21+g40e9e97) (0.5.6)
+Requirement already satisfied: soupsieve>1.2 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from beautifulsoup4->pydata-sphinx-theme==0.8.1->pvlib==0.9.6.dev21+g40e9e97) (2.6)
+Requirement already satisfied: zipp>=0.5 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from importlib-metadata>=4.4->sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (3.20.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.3 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from jedi>=0.16->ipython->pvlib==0.9.6.dev21+g40e9e97) (0.8.4)
+Requirement already satisfied: MarkupSafe>=2.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from Jinja2>=2.3->sphinx==4.5.0->pvlib==0.9.6.dev21+g40e9e97) (2.1.5)
+Requirement already satisfied: ptyprocess>=0.5 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from pexpect>4.3->ipython->pvlib==0.9.6.dev21+g40e9e97) (0.7.0)
+Requirement already satisfied: wcwidth in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from prompt-toolkit<3.1.0,>=3.0.41->ipython->pvlib==0.9.6.dev21+g40e9e97) (0.2.13)
+Requirement already satisfied: executing>=1.2.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from stack-data->ipython->pvlib==0.9.6.dev21+g40e9e97) (2.0.1)
+Requirement already satisfied: asttokens>=2.1.0 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from stack-data->ipython->pvlib==0.9.6.dev21+g40e9e97) (2.4.1)
+Requirement already satisfied: pure-eval in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from stack-data->ipython->pvlib==0.9.6.dev21+g40e9e97) (0.2.3)
+Building wheels for collected packages: pvlib
+  Building editable for pvlib (pyproject.toml): started
+  Building editable for pvlib (pyproject.toml): finished with status 'done'
+  Created wheel for pvlib: filename=pvlib-0.9.6.dev21+g40e9e97-0.editable-py3-none-any.whl size=5841 sha256=c8193b4754cd76b183e3da3f92980b6c1417fb8c33090f3215618955312679d4
+  Stored in directory: /tmp/pip-ephem-wheel-cache-b04uye48/wheels/7d/66/67/70d1ee2124ccf21d601c352e25cdca10f611f7c8b3f9ffb9e4
+Successfully built pvlib
+Installing collected packages: pvlib
+  Attempting uninstall: pvlib
+    Found existing installation: pvlib 0.9.6.dev21+g40e9e97
+    Uninstalling pvlib-0.9.6.dev21+g40e9e97:
+      Successfully uninstalled pvlib-0.9.6.dev21+g40e9e97
+Successfully installed pvlib-0.9.6.dev21+g40e9e97
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ git checkout 40e9e978c170bdde4eeee1547729417665dbc34c pvlib/tests/test_iam.py
+Updated 0 paths from e6a4d8e
++ git apply -v -
+Checking patch pvlib/tests/test_iam.py...
+Applied patch pvlib/tests/test_iam.py cleanly.
++ pytest -rA pvlib/tests/test_iam.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-8.3.2, pluggy-1.5.0
+rootdir: /testbed
+configfile: pyproject.toml
+plugins: anyio-4.4.0, remotedata-0.4.1, requests-mock-1.12.1, timeout-2.3.1, cov-5.0.0, rerunfailures-14.0, mock-3.14.0
+collected 31 items
+
+pvlib/tests/test_iam.py ...F...........................                  [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_physical_n1_L0 ______________________________
+
+    def test_physical_n1_L0():
+        aoi = np.array([0, 22.5, 45, 67.5, 90, 100, np.nan])
+        expected = np.array([1, 1, 1, 1, 0, 0, np.nan])
+        iam = _iam.physical(aoi, n=1, L=0)
+>       assert_allclose(iam, expected, equal_nan=True)
+
+pvlib/tests/test_iam.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = (<function assert_allclose.<locals>.compare at 0x7ff105b535e0>, array([ 1.,  1.,  1.,  1., nan, nan, nan]), array([ 1.,  1.,  1.,  1.,  0.,  0., nan]))
+kwds = {'equal_nan': True, 'err_msg': '', 'header': 'Not equal to tolerance rtol=1e-07, atol=0', 'verbose': True}
+
+    @wraps(func)
+    def inner(*args, **kwds):
+        with self._recreate_cm():
+>           return func(*args, **kwds)
+E           AssertionError: 
+E           Not equal to tolerance rtol=1e-07, atol=0
+E           
+E           x and y nan location mismatch:
+E            x: array([ 1.,  1.,  1.,  1., nan, nan, nan])
+E            y: array([ 1.,  1.,  1.,  1.,  0.,  0., nan])
+
+/opt/miniconda3/envs/testbed/lib/python3.9/contextlib.py:79: AssertionError
+=============================== warnings summary ===============================
+pvlib/tests/conftest.py:7
+  /testbed/pvlib/tests/conftest.py:7: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    from pkg_resources import parse_version
+
+../opt/miniconda3/envs/testbed/lib/python3.9/site-packages/pkg_resources/__init__.py:3144
+  /opt/miniconda3/envs/testbed/lib/python3.9/site-packages/pkg_resources/__init__.py:3144: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('sphinxcontrib')`.
+  Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+    declare_namespace(pkg)
+
+pvlib/tests/test_iam.py::test_physical_n1_L0
+  /testbed/pvlib/iam.py:178: RuntimeWarning: invalid value encountered in divide
+    rho12_s = ((n1costheta1 - n2costheta2) / (n1costheta1 + n2costheta2)) ** 2
+
+pvlib/tests/test_iam.py::test_physical_n1_L0
+  /testbed/pvlib/iam.py:179: RuntimeWarning: invalid value encountered in divide
+    rho12_p = ((n1costheta2 - n2costheta1) / (n1costheta2 + n2costheta1)) ** 2
+
+pvlib/tests/test_iam.py::test_physical_n1_L0
+  /testbed/pvlib/iam.py:211: RuntimeWarning: invalid value encountered in divide
+    tau_s *= np.exp(-K * L / costheta)
+
+pvlib/tests/test_iam.py::test_physical_n1_L0
+  /testbed/pvlib/iam.py:212: RuntimeWarning: invalid value encountered in divide
+    tau_p *= np.exp(-K * L / costheta)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED pvlib/tests/test_iam.py::test_ashrae
+PASSED pvlib/tests/test_iam.py::test_ashrae_scalar
+PASSED pvlib/tests/test_iam.py::test_physical
+PASSED pvlib/tests/test_iam.py::test_physical_ar
+PASSED pvlib/tests/test_iam.py::test_physical_noar
+PASSED pvlib/tests/test_iam.py::test_physical_scalar
+PASSED pvlib/tests/test_iam.py::test_martin_ruiz
+PASSED pvlib/tests/test_iam.py::test_martin_ruiz_exception
+PASSED pvlib/tests/test_iam.py::test_martin_ruiz_diffuse
+PASSED pvlib/tests/test_iam.py::test_iam_interp
+PASSED pvlib/tests/test_iam.py::test_sapm[45-0.9975036250000002]
+PASSED pvlib/tests/test_iam.py::test_sapm[aoi1-expected1]
+PASSED pvlib/tests/test_iam.py::test_sapm[aoi2-expected2]
+PASSED pvlib/tests/test_iam.py::test_sapm_limits
+PASSED pvlib/tests/test_iam.py::test_marion_diffuse_model
+PASSED pvlib/tests/test_iam.py::test_marion_diffuse_kwargs
+PASSED pvlib/tests/test_iam.py::test_marion_diffuse_invalid
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_scalar[sky-180-0.9596085829811408]
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_scalar[horizon-1800-0.8329070417832541]
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_scalar[ground-180-0.719823559106309]
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_list[sky-180-expected0]
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_list[horizon-1800-expected1]
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_list[ground-180-expected2]
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_series[sky-180-expected0]
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_series[horizon-1800-expected1]
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_series[ground-180-expected2]
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_ground_flat
+PASSED pvlib/tests/test_iam.py::test_marion_integrate_invalid
+PASSED pvlib/tests/test_iam.py::test_schlick
+PASSED pvlib/tests/test_iam.py::test_schlick_diffuse
+FAILED pvlib/tests/test_iam.py::test_physical_n1_L0 - AssertionError: 
+=================== 1 failed, 30 passed, 6 warnings in 0.37s ===================
++ git checkout 40e9e978c170bdde4eeee1547729417665dbc34c pvlib/tests/test_iam.py
+Updated 1 path from e6a4d8e

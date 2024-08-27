@@ -1,0 +1,12 @@
+
+diff --git a/reproduce_bug.py b/reproduce_bug.py
+new file mode 100644
+index 00000000..f36d08d8
+--- /dev/null
++++ b/reproduce_bug.py
+@@ -0,0 +1,5 @@
++"""Test case"""
++
++import numpy as np
++value = np.random.rand(1)
++print(value)

@@ -1,0 +1,768 @@
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /opt/miniconda3/bin/conda
+++++ dirname /opt/miniconda3/bin
++++ PATH=/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_1=/opt/miniconda3
+++ CONDA_PREFIX_1=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /testbed
++ git config --global --add safe.directory /testbed
++ cd /testbed
++ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	changes.patch
+	main.py
+
+nothing added to commit but untracked files present (use "git add" to track)
++ git show
+commit f8cf45b6c121e5a4bf4a43f71aba3bc64af3db9c
+Author: Darcy Mason <darcymason@gmail.com>
+Date:   Wed Aug 31 15:05:30 2022 -0400
+
+    [MRG] Codify Ensures distinct names (#1674)
+    
+    * Failing test for codify with nested same name
+    * Codify ensures distinct nested names
+    * Codify capable of utf8 content
+    * Add Python info to CLI help
+
+diff --git a/doc/release_notes/v2.4.0.rst b/doc/release_notes/v2.4.0.rst
+index 95edf705e..b11c4d0ec 100644
+--- a/doc/release_notes/v2.4.0.rst
++++ b/doc/release_notes/v2.4.0.rst
+@@ -7,6 +7,8 @@ Enhancements
+ * Added attribute :attr:`~pydicom.tag.BaseTag.json_key` (:pr:`1648`)
+ * Added value validation for numerical VRs, add type validation for all
+   validated VRs (:issue:`1414`)
++* CLI commands now accept *pydicom* charset test files and CLI help shows
++  Python Version (:pr:`1674`)
+ 
+ Fixes
+ -----
+@@ -15,3 +17,5 @@ Fixes
+ * Increased download speed with progress bar for test data (:issue:`1611`)
+ * Fixed crash due to invalid private creator (:issue:`1638`)
+ * Fixed extremely long BytesLengthException error messages (:pr:`1683`)
++* In codify, ensure unique variable names for DICOM keywords repeated
++  in sequences, and handle unicode characters correctly (:issue:`1670`)
+diff --git a/pydicom/cli/main.py b/pydicom/cli/main.py
+index 967794f4f..a97ecd4d9 100644
+--- a/pydicom/cli/main.py
++++ b/pydicom/cli/main.py
+@@ -10,10 +10,11 @@ attributes, and calls set_defaults(func=callback_function)
+ import argparse
+ import pkg_resources
+ import re
++import sys
+ from typing import Tuple, cast, List, Any, Dict, Optional, Callable
+ 
+ from pydicom import dcmread
+-from pydicom.data.data_manager import get_testdata_file
++from pydicom.data.data_manager import get_charset_files, get_testdata_file
+ from pydicom.dataset import Dataset
+ 
+ 
+@@ -132,6 +133,14 @@ def filespec_parser(filespec: str) -> List[Tuple[Dataset, Any]]:
+     except NotImplementedError:  # will get this if absolute path passed
+         pydicom_filename = ""
+ 
++    # Check if filename is in charset files
++    if not pydicom_filename:
++        try:
++            char_filenames = get_charset_files(filename)
++            pydicom_filename = char_filenames[0]
++        except NotImplementedError:  # will get this if absolute path passed
++            pass
++
+     if prefix == "pydicom":
+         filename = pydicom_filename
+ 
+@@ -201,8 +210,11 @@ def main(args: Optional[List[str]] = None) -> None:
+     """
+     global subparsers
+ 
++    py_version = sys.version.split()[0]
++
+     parser = argparse.ArgumentParser(
+-        prog="pydicom", description="pydicom command line utilities"
++        prog="pydicom",
++        description=f"pydicom command line utilities (Python {py_version})"
+     )
+     subparsers = parser.add_subparsers(help="subcommand help")
+ 
+diff --git a/pydicom/tests/test_cli.py b/pydicom/tests/test_cli.py
+index b6be2f3b8..df53388b1 100644
+--- a/pydicom/tests/test_cli.py
++++ b/pydicom/tests/test_cli.py
+@@ -1,3 +1,4 @@
++# -*- coding: utf-8 -*-
+ # Copyright 2020 pydicom authors. See LICENSE file for details.
+ """Tests for command-line interface"""
+ 
+@@ -138,6 +139,13 @@ class TestCLIcall:
+         with pytest.raises(NotImplementedError):
+             main("codify pydicom::rtplan.dcm::RTPlanLabel".split())
+ 
++    def test_codify_UTF8(self, capsys):
++        """CLI `codify` command creates code with utf-8 characters"""
++        main(f"codify pydicom::chrFren.dcm".split())
++        out, _ = capsys.readouterr()
++        assert out.startswith("# -*- coding: utf-8 -*-")
++        assert "Buc^Jérôme" in out
++
+     def test_help(self, capsys):
+         """CLI `help` command gives expected output"""
+         # With subcommand
+diff --git a/pydicom/tests/test_util.py b/pydicom/tests/test_util.py
+index 20b3aa36e..caff06533 100644
+--- a/pydicom/tests/test_util.py
++++ b/pydicom/tests/test_util.py
+@@ -5,12 +5,11 @@ from contextlib import contextmanager
+ 
+ import pytest
+ 
+-from pydicom import config, dcmread
++from pydicom import config, dcmread, Dataset, Sequence
+ from pydicom import filereader
+ from pydicom._private_dict import private_dictionaries
+ from pydicom.data import get_testdata_file
+ from pydicom.dataelem import DataElement
+-from pydicom.dataset import Dataset
+ from pydicom.tag import Tag
+ from pydicom.uid import (
+     ImplicitVRLittleEndian, ExplicitVRBigEndian, ExplicitVRLittleEndian
+@@ -23,6 +22,7 @@ from pydicom.util.codify import (
+     default_name_filter,
+     code_imports,
+     code_dataelem,
++    code_dataset,
+     main as codify_main,
+ )
+ from pydicom.util.dump import *
+@@ -134,15 +134,34 @@ class TestCodify:
+             "\n"
+             "# Control Point Sequence: Control Point 1\n"
+             "cp1 = Dataset()\n"
+-            "cp1.PatientID = '1234'\n"
+-            "cp_sequence.append(cp1)"
++            "cp_sequence.append(cp1)\n"
++            "cp1.PatientID = '1234'"
+         )
+ 
+         assert out == code_dataelem(elem)
+ 
+-    def test_code_dataset(self):
+-        """Test utils.codify.code_dataset"""
+-        pass
++    def test_codify_recurring_keyword(self):
++        """Test utils.codify.code_dataset with same keyword nested"""
++        # Create fake Dataset with repeated DICOM keyword nested
++        # (0040, a730)  Content Sequence  1 item(s) ----
++        #    (0040, a040) Value Type                          CS: 'CODE'
++        #    (0040, a730)  Content Sequence  1 item(s) ----
++        #       (0040, a040) Value Type                          CS: 'CODE'
++
++        ds = Dataset()
++        ds.ContentSequence = seq1 = Sequence()
++        seq1.append(Dataset())
++        seq1[0].ValueType = "CODE"
++        seq1[0].ContentSequence = seq2 = Sequence()
++        seq2.append(Dataset())
++        seq2[0].ValueType = "CODE_1"
++        ds_code = code_dataset(ds)
++
++        # normal 1st use of var name
++        assert "content1.ValueType = 'CODE'" in ds_code
++
++        # Nested item of same name should have subscript
++        assert "content1_1.ValueType = 'CODE_1'" in ds_code
+ 
+     def test_code_file(self, capsys):
+         """Test utils.codify.code_file"""
+diff --git a/pydicom/util/codify.py b/pydicom/util/codify.py
+index a93153ba6..748c66b11 100644
+--- a/pydicom/util/codify.py
++++ b/pydicom/util/codify.py
+@@ -18,7 +18,8 @@ import argparse
+ import os.path
+ import re
+ import sys
+-from typing import Optional, List, Callable
++from typing import Optional, List, Callable, cast
++from collections import deque
+ 
+ import pydicom
+ from pydicom.datadict import dictionary_keyword
+@@ -80,7 +81,8 @@ def code_dataelem(
+     dataelem: DataElement,
+     dataset_name: str = "ds",
+     exclude_size: Optional[int] = None,
+-    include_private: bool = False
++    include_private: bool = False,
++    var_names: Optional[deque] = None
+ ) -> str:
+     """Code lines for a single DICOM data element
+ 
+@@ -96,7 +98,8 @@ def code_dataelem(
+         will only have a commented string for a value,
+         causing a syntax error when the code is run,
+         and thus prompting the user to remove or fix that line.
+-
++    var_names: Union[deque, None]
++        Used internally to ensure unique variable names in nested sequences.
+     Returns
+     -------
+     str
+@@ -106,7 +109,8 @@ def code_dataelem(
+ 
+     if dataelem.VR == VR.SQ:
+         return code_sequence(
+-            dataelem, dataset_name, exclude_size, include_private
++            dataelem, dataset_name, exclude_size, include_private,
++            var_names=var_names
+         )
+ 
+     # If in DICOM dictionary, set using the keyword
+@@ -143,6 +147,7 @@ def code_sequence(
+     exclude_size: Optional[int] = None,
+     include_private: bool = False,
+     name_filter: Callable[[str], str] = default_name_filter,
++    var_names: Optional[deque] = None,
+ ) -> str:
+     """Code lines for recreating a Sequence data element
+ 
+@@ -162,6 +167,8 @@ def code_sequence(
+     name_filter: Callable[[str], str]
+         A callable taking a sequence name or sequence item name, and returning
+         a shorter name for easier code reading
++    var_names: Union[deque, None]
++        Used internally to ensure unique variable names in nested sequences.
+ 
+     Returns
+     -------
+@@ -169,6 +176,15 @@ def code_sequence(
+         A string containing code lines to recreate a DICOM sequence
+     """
+ 
++    # Normally var_names is given from code_dataset, but for some tests need
++    #   to initialize it
++    if var_names is None:
++        var_names = deque()
++
++    def unique_name(name: str) -> str:
++        name_count = cast(deque, var_names).count(name) - 1
++        return name if name_count == 0 else name + f"_{name_count}"
++
+     lines = []
+     seq = dataelem.value
+     seq_name = dataelem.name
+@@ -183,8 +199,11 @@ def code_sequence(
+     lines.append("# " + seq_name)
+ 
+     # Code line to create a new Sequence object
+-    if name_filter:
+-        seq_var = name_filter(seq_keyword)
++    seq_var = name_filter(seq_keyword)
++    var_names.append(seq_var)
++    orig_seq_var = seq_var
++    seq_var = unique_name(seq_var)
++
+     lines.append(seq_var + " = Sequence()")
+ 
+     # Code line to add the sequence to its parent
+@@ -208,14 +227,29 @@ def code_sequence(
+         lines.append("# " + seq_name + ": " + seq_item_name + " " + index_str)
+ 
+         # Determine the variable name to use for the sequence item (dataset)
+-        ds_name = seq_var.replace("_sequence", "") + index_str
++        ds_name = orig_seq_var.replace("_sequence", "") + index_str
+ 
+-        # Code the sequence item
+-        code_item = code_dataset(ds, ds_name, exclude_size, include_private)
+-        lines.append(code_item)
++        # Append "_#" if name already in use (in parent sequences)
++        var_names.append(ds_name)
++        ds_name = unique_name(ds_name)
++
++        # Code the sequence item dataset
++        code_item = code_dataset(
++            ds, ds_name, exclude_size, include_private, var_names=var_names
++        )
+ 
+-        # Code the line to append the item to its parent sequence
+-        lines.append(seq_var + ".append(" + ds_name + ")")
++        # Remove variable name from stored list, this dataset complete
++        var_names.pop()
++
++        # Code dataset creation and appending that to sequence, then the rest
++        # This keeps the logic close together, rather than after many items set
++        code_split = code_item.splitlines()
++        lines.append(code_split[0])  # "<ds_name> = Dataset()"
++        lines.append(f"{seq_var}.append({ds_name})")
++        lines.extend(code_split[1:])
++
++    # Remove sequence variable name we've used
++    var_names.pop()
+ 
+     # Join the lines and return a single string
+     return line_term.join(lines)
+@@ -227,6 +261,7 @@ def code_dataset(
+     exclude_size: Optional[int] = None,
+     include_private: bool = False,
+     is_file_meta: bool = False,
++    var_names: Optional[deque] = None
+ ) -> str:
+     """Return Python code for creating `ds`.
+ 
+@@ -245,6 +280,8 @@ def code_dataset(
+         data elements will be coded.
+     is_file_meta : bool, optional
+         ``True`` if `ds` contains file meta information elements.
++    var_names: deque, optional
++        Used internally to ensure unique variable names in nested sequences.
+ 
+     Returns
+     -------
+@@ -252,8 +289,12 @@ def code_dataset(
+         The codified dataset.
+     """
+ 
++    if var_names is None:
++        var_names = deque()
+     lines = []
++
+     ds_class = " = FileMetaDataset()" if is_file_meta else " = Dataset()"
++
+     lines.append(dataset_name + ds_class)
+     for dataelem in ds:
+         # If a private data element and flag says so, skip it and go to next
+@@ -261,7 +302,8 @@ def code_dataset(
+             continue
+         # Otherwise code the line and add it to the lines list
+         code_line = code_dataelem(
+-            dataelem, dataset_name, exclude_size, include_private
++            dataelem, dataset_name, exclude_size, include_private,
++            var_names=var_names
+         )
+         lines.append(code_line)
+         # Add blank line if just coded a sequence
+@@ -270,6 +312,7 @@ def code_dataset(
+     # If sequence was end of this dataset, remove the extra blank line
+     if len(lines) and lines[-1] == "":
+         lines.pop()
++
+     # Join all the code lines and return them
+     return line_term.join(lines)
+ 
+@@ -313,8 +356,8 @@ def code_file_from_dataset(
+ 
+     Parameters
+     ----------
+-    filename : str
+-        Complete path and filename of a DICOM file to convert
++    ds : Dataset
++        A pydicom Dataset to convert
+     exclude_size : Union[int,None]
+         If not None, values longer than this (in bytes)
+         will only have a commented string for a value,
+@@ -336,6 +379,7 @@ def code_file_from_dataset(
+     filename = ds.get("filename")
+     identifier = f"DICOM file '{filename}'" if filename else "non-file dataset"
+ 
++    lines.append("# -*- coding: utf-8 -*-")
+     lines.append(f"# Coded version of {identifier}")
+     lines.append("# Produced by pydicom codify utility script")
+ 
+@@ -385,7 +429,7 @@ def set_parser_arguments(
+     parser.add_argument(
+         "outfile",
+         nargs="?",
+-        type=argparse.FileType("w"),
++        type=argparse.FileType("w", encoding="UTF-8"),
+         help=(
+             "Filename to write Python code to, if not specified then code is "
+             "written to stdout"
++ git diff f8cf45b6c121e5a4bf4a43f71aba3bc64af3db9c
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z x ']'
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1='(testbed) '
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=3
++++ CONDA_SHLVL=3
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=4
+++ CONDA_SHLVL=4
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_3=/opt/miniconda3
+++ CONDA_PREFIX_3=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ python -m pip install -e .
+Obtaining file:///testbed
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Installing collected packages: pydicom
+  Attempting uninstall: pydicom
+    Found existing installation: pydicom 2.4.0.dev0
+    Uninstalling pydicom-2.4.0.dev0:
+      Successfully uninstalled pydicom-2.4.0.dev0
+  DEPRECATION: Legacy editable install of pydicom==2.4.0.dev0 from file:///testbed (setup.py develop) is deprecated. pip 25.0 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457
+  Running setup.py develop for pydicom
+Successfully installed pydicom
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ git checkout f8cf45b6c121e5a4bf4a43f71aba3bc64af3db9c pydicom/tests/test_json.py
+Updated 0 paths from fe3510c6c
++ git apply -v -
+Checking patch pydicom/tests/test_json.py...
+Applied patch pydicom/tests/test_json.py cleanly.
++ pytest -rA pydicom/tests/test_json.py
+============================= test session starts ==============================
+platform linux -- Python 3.10.14, pytest-8.3.2, pluggy-1.5.0
+rootdir: /testbed
+collected 27 items
+
+pydicom/tests/test_json.py ................F..........                   [100%]
+
+=================================== FAILURES ===================================
+_____ TestDataSetToJson.test_suppress_invalid_tags_with_failed_dataelement _____
+
+self = <pydicom.tests.test_json.TestDataSetToJson object at 0x7fcdf94591e0>
+
+    def test_suppress_invalid_tags_with_failed_dataelement(self):
+        """Test tags that raise exceptions don't if suppress_invalid_tags True.
+        """
+        ds = Dataset()
+        # we have to add a RawDataElement as creating a DataElement would
+        # already raise an exception
+        ds[0x00082128] = RawDataElement(
+            Tag(0x00082128), 'IS', 4, b'5.25', 0, True, True)
+    
+        with pytest.raises(TypeError):
+            ds.to_json_dict()
+    
+>       ds_json = ds.to_json_dict(suppress_invalid_tags=True)
+
+pydicom/tests/test_json.py:301: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+pydicom/dataset.py:2495: in to_json_dict
+    data_element = self[key]
+pydicom/dataset.py:939: in __getitem__
+    self[tag] = DataElement_from_raw(elem, character_set, self)
+pydicom/dataelem.py:859: in DataElement_from_raw
+    value = convert_value(vr, raw, encoding)
+pydicom/values.py:773: in convert_value
+    return converter(byte_string, is_little_endian, num_format)
+pydicom/values.py:348: in convert_IS_string
+    return MultiString(num_string, valtype=pydicom.valuerep.IS)
+pydicom/valuerep.py:1366: in MultiString
+    return valtype(splitup[0])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'pydicom.valuerep.IS'>, val = '5.25', validation_mode = 1
+
+    def __new__(  # type: ignore[misc]
+            cls: Type["IS"], val: Union[None, str, int, float, Decimal],
+            validation_mode: int = None
+    ) -> Optional[Union[str, "IS"]]:
+        """Create instance if new integer string"""
+        if val is None:
+            return val
+    
+        if validation_mode is None:
+            validation_mode = config.settings.reading_validation_mode
+    
+        if isinstance(val, str):
+            if val.strip() == '':
+                return val
+            validate_value("IS", val, validation_mode)
+    
+        try:
+            newval = super().__new__(cls, val)
+        except ValueError:
+            # accept float strings when no integer loss, e.g. "1.0"
+            newval = super().__new__(cls, float(val))
+    
+        # check if a float or Decimal passed in, then could have lost info,
+        # and will raise error. E.g. IS(Decimal('1')) is ok, but not IS(1.23)
+        #   IS('1.23') will raise ValueError
+        if isinstance(val, (float, Decimal, str)) and newval != float(val):
+>           raise TypeError("Could not convert value to integer without loss")
+E           TypeError: Could not convert value to integer without loss
+
+pydicom/valuerep.py:1284: TypeError
+=============================== warnings summary ===============================
+pydicom/tests/test_json.py::TestDataSetToJson::test_suppress_invalid_tags_with_failed_dataelement
+  /testbed/pydicom/valuerep.py:443: UserWarning: Invalid value for VR IS: '5.25'. Please see <https://dicom.nema.org/medical/dicom/current/output/html/part05.html#table_6.2-1> for allowed values for each VR.
+    warnings.warn(msg)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+_________________ TestDataSetToJson.test_suppress_invalid_tags _________________
+------------------------------ Captured log call -------------------------------
+ERROR    pydicom:dataset.py:2502 Error while processing tag 00100010
+ERROR    pydicom:dataset.py:2502 Error while processing tag 00100010
+=========================== short test summary info ============================
+PASSED pydicom/tests/test_json.py::TestPersonName::test_json_pn_from_file
+PASSED pydicom/tests/test_json.py::TestPersonName::test_pn_components_to_json
+PASSED pydicom/tests/test_json.py::TestPersonName::test_pn_components_from_json
+PASSED pydicom/tests/test_json.py::TestPersonName::test_empty_value
+PASSED pydicom/tests/test_json.py::TestPersonName::test_multi_value_to_json
+PASSED pydicom/tests/test_json.py::TestPersonName::test_dataelem_from_json
+PASSED pydicom/tests/test_json.py::TestAT::test_to_json
+PASSED pydicom/tests/test_json.py::TestAT::test_from_json
+PASSED pydicom/tests/test_json.py::TestAT::test_invalid_value_in_json
+PASSED pydicom/tests/test_json.py::TestAT::test_invalid_tag_in_json
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_json_from_dicom_file
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_roundtrip
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_dataset_dumphandler
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_dataelement_dumphandler
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_sort_order
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_suppress_invalid_tags
+PASSED pydicom/tests/test_json.py::TestSequence::test_nested_sequences
+PASSED pydicom/tests/test_json.py::TestBinary::test_inline_binary
+PASSED pydicom/tests/test_json.py::TestBinary::test_invalid_inline_binary
+PASSED pydicom/tests/test_json.py::TestBinary::test_valid_bulkdata_uri
+PASSED pydicom/tests/test_json.py::TestBinary::test_invalid_bulkdata_uri
+PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called
+PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_2
+PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_within_SQ
+PASSED pydicom/tests/test_json.py::TestNumeric::test_numeric_values
+PASSED pydicom/tests/test_json.py::TestNumeric::test_numeric_types
+FAILED pydicom/tests/test_json.py::TestDataSetToJson::test_suppress_invalid_tags_with_failed_dataelement
+=================== 1 failed, 26 passed, 1 warning in 0.27s ====================
++ git checkout f8cf45b6c121e5a4bf4a43f71aba3bc64af3db9c pydicom/tests/test_json.py
+Updated 1 path from fe3510c6c

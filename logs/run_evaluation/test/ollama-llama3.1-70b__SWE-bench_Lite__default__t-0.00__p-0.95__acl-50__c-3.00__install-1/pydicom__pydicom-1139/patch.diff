@@ -1,0 +1,10 @@
+
+diff --git a/reproduce_bug.py b/reproduce_bug.py
+new file mode 100644
+index 000000000..9377b5814
+--- /dev/null
++++ b/reproduce_bug.py
+@@ -0,0 +1,3 @@
++import pydicom
++ds = pydicom.dcmread('some_file.dcm')
++print(ds)
